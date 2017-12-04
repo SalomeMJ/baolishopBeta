@@ -25,4 +25,7 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
-});
+})
+  .controller('ownCtrl', function($scope) {
+    $scope.title='我的';
+  });
