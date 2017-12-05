@@ -5693,7 +5693,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   border-style: solid;
   font-size: 16px; }
   .item h2 {
-    margin: 0 0 2px 0;
+    margin-top: 14px;
     font-size: 16px;
     font-weight: normal; }
   .item h3 {

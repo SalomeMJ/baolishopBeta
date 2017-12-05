@@ -6,29 +6,21 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
-  },{
+    name: '周边商圈',
+    prodect:{
+      kind:'全部分类'
+    },prodects:{
+      kinds:'默认排序'
+    },
+    face: ''
+  }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
+    name: '周边工作室',
+    face: '返回'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
+    name: '黑白榜',
+    face: ''
   }];
 
   return {
@@ -45,6 +37,80 @@ angular.module('starter.services', [])
         }
       }
       return null;
+    },
+    // adr: function () {
+    //   return $http.get('http://localhost/angular/baolishop/edit-user.php').then(function (res) {
+    //     console.log(res);
+    //
+    //   })
+    // }
+
+};
+
+
+})
+.factory('Chates',function () {
+  var shop = [{
+    id: 0,
+    name: '青川足道',
+    lastText: '✨✨✨✨✨',
+    say: '妈妈说请先生不如于先生',
+    face: 'img/person.png',
+    price: '人均:',
+    money :'￥3元'
+  }, {
+    id: 1,
+    name: '中国移动营业厅',
+    lastText: '✨✨✨✨✨',
+    say: '妈妈说请先生不如于先生',
+    face: 'img/person.png',
+    price: '人均:',
+    money :'￥3元'
+  }, {
+    id: 2,
+    name: '交通银行',
+    lastText: '✨✨✨✨✨',
+    say: '妈妈说请先生不如于先生',
+    face: 'img/person.png',
+    price: '人均:',
+    money :'￥3元'
+  }, {
+    id: 3,
+    name: '美丽庄园',
+    lastText: '✨✨✨✨✨',
+    say: '妈妈说请先生不如于先生',
+    face: 'img/person.png',
+    price: '人均:',
+    money :'￥3元'
+  },{
+    id: 4,
+    name: '保利时代',
+    lastText: '✨✨✨✨✨',
+    say: '妈妈说请先生不如于先生',
+    face: 'img/person.png',
+    price: '人均:',
+    money :'￥3元'
+    },{
+    id: 5,
+    name: '良品铺子',
+    lastText: '✨✨✨✨✨',
+    say: '妈妈说请先生不如于先生',
+    face: 'img/person.png',
+    price: '人均:',
+    money :'￥3元'
+    },{
+    id: 6,
+    name: '悦动建生',
+    lastText: '✨✨✨✨✨',
+    say: '妈妈说请先生不如于先生',
+    face: 'img/person.png',
+    price: '人均:',
+    money :'￥3元'
+  }];
+  return {
+    otall: function() {
+      return shop;
     }
+
   };
-});
+})

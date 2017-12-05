@@ -6,9 +6,30 @@
 -->
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+
+    <!--<img ng-src="{{chat.face}}" style="width: 64px; height: 64px">-->
+    <!--<p>{{chat.face}}</p>-->
+    <!--<span>{{chat.adr()}}</span>-->
+    <span ng-click="show1()" class="kind">{{chat.prodect.kind}}</span>
+    <span ng-click="show2()" class="kinds">{{chat.prodects.kinds}}</span>
+    <ion-item ng-repeat="x in chatt" type="item-text-wrap" href="#/tab/chats/{{chat.id}}" class="photo">
+      <img ng-src="{{x.face}}" style="width: 40px; height: 40px">
+      <p class="top">{{x.name}}</p>
+      <p>{{x.lastText}}</p>
+      <p class="line">{{x.say}}</p>
+      <span>{{x.price}}</span>
+      <span>{{x.money}}</span>
+
+    </ion-item>
+
+
+
+    <!--<ion-item ng-repeat="x in chatt" type="item-text-wrap" href="#/tab/chats">-->
+      <!--<img ng-src="{{x.face}}">-->
+      <!--<p>{{x.name}}</p>-->
+      <!--<p>{{x.lastText}}</p>-->
+      <!--<p>{{x.say}}</p>-->
+    <!--</ion-item>-->
   </ion-content>
 </ion-view>
+

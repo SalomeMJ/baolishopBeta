@@ -25,15 +25,29 @@ angular.module('starter.controllers', [])
   //});
 
   $scope.chats = Chats.all();
+
+
+
   $scope.remove = function(chat) {
     Chats.remove(chat);
   };
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+.controller('ChatDetailCtrl', function($scope, $stateParams, Chats,Chates) {
   $scope.chat = Chats.get($stateParams.chatId);
-})
+  // console.log($scope.chat);
+  if($scope.chat.id==0){
+    $scope.chatt = Chates.otall($stateParams.chatId);
+  }
+  // $scope.res=Chats.adr();
+  $scope.show1 = function () {
 
+  }
+})
+  // .controller('ChatNextCtrl',function ($scope,Chats) {
+  //   $scope.chatt = Chats.otall();
+  //   console.log($scope.chatt)
+  // })
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
     enableFriends: true
