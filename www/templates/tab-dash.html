@@ -1,5 +1,30 @@
 <ion-view view-title="保利尚城">
-  <ion-content class="padding " id="banners">
-    <span>宗旨1：给业主提供最温馨的服务</span>
+  <ion-content class="padding" id="content">
+    <div id="banners">
+      <span>宗旨1：给业主提供最温馨的服务</span>
+    </div>
+    <ion class="row">
+      <ion-col button text-center class="col cols1">
+        <img src="./img/water.png" alt="">
+        <span>送水</span>
+      </ion-col>
+      <ion-col  button text-center  class="col cols2">
+        <img src="./img/pay.png" alt="">
+        <span>缴费</span>
+      </ion-col>
+      <ion-col button text-center class="col cols3">
+        <img src="./img/shop.png" alt="">
+        <span>超市</span>
+      </ion-col>
+      <ion-col button text-center class="col cols4 item-remove-animate " ng-click="sug()">
+        <img src="./img/suggestion.png" alt="">
+        <span>建议</span>
+      </ion-col>
+      <ion-col button text-center class="col cols5 item-remove-animate"  ng-click="home()">
+        <img src="./img/home.png" alt="">
+        <span>家居</span>
+      </ion-col>
+    </ion>
+
   </ion-content>
 </ion-view>

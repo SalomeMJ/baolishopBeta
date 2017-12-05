@@ -9,7 +9,7 @@ angular.module('starter.services', [])
     name: 'Ben Sparrow',
     lastText: 'You on your way?',
     face: 'img/ben.png'
-  }, {
+  },{
     id: 1,
     name: 'Max Lynx',
     lastText: 'Hey, it\'s me',
