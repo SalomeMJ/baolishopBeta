@@ -76,6 +76,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
       views: {
@@ -95,7 +96,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+    .state('tab.work', {
+      url: '/work',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/tab-work.html',
+          controller: 'WorkCtrl'
+        }
+      }
+    })
+    .state('tab.work2', {
+      url: '/work2',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/tab-work2.html',
+          controller: 'Work2Ctrl'
+        }
+      }
+    })
     .state('tab.own', {
       url: '/own',
       views: {
