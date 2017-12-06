@@ -7,11 +7,8 @@ angular.module('starter.services', [])
   var chats = [{
     id: 0,
     name: '周边商圈',
-    prodect:{
-      kind:'全部分类'
-    },prodects:{
-      kinds:'默认排序'
-    },
+    kind:'全部分类',
+    kinds:'默认排序',
     face: ''
   }, {
     id: 1,
@@ -114,3 +111,205 @@ angular.module('starter.services', [])
 
   };
 })
+  .factory('Chatess',function () {
+    var shops = [{
+      id: 0,
+      name: 'dasdasdsa',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }, {
+      id: 1,
+      name: 'fasfasd',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }, {
+      id: 2,
+      name: 'fasfasf',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }, {
+      id: 3,
+      name: 'fasfas',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    },{
+      id: 4,
+      name: 'afasf',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    },{
+      id: 5,
+      name: 'afsafa',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    },{
+      id: 6,
+      name: 'afasf',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }];
+    return {
+      othall: function() {
+        return shops;
+      }
+
+    };
+  })
+  .factory('NextChates',function () {
+    var shopes = [{
+      id: 0,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    }, {
+      id: 1,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    }, {
+      id: 2,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    }, {
+      id: 3,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    },{
+      id: 4,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    },{
+      id: 5,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    },{
+      id: 6,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    }];
+    return {
+      othalls: function() {
+        return shopes;
+      }
+
+    };
+  })
+  .factory('SecondChates',function () {
+    var shopes1 = [{
+      id: 0,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }, {
+      id: 1,
+      name: '就不告jgh诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }, {
+      id: 2,
+      name: '就不告jgh诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }, {
+      id: 3,
+      name: '就不jhgjgh告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    },{
+      id: 4,
+      name: '就不告jghjhg诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    },{
+      id: 5,
+      name: '就不告jghj诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    },{
+      id: 6,
+      name: '就不告诉jgjh你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }];
+    return {
+      othalls1: function() {
+        return shopes1;
+      }
+
+    };
+  })

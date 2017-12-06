@@ -3557,8 +3557,8 @@ ion-infinite-scroll {
  * Typography
  * --------------------------------------------------
  */
-p {
-  margin: 0 0 10px; }
+/*p {*/
+  /*margin: 0 0 10px; }*/
 
 small {
   font-size: 85%; }

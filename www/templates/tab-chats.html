@@ -1,10 +1,21 @@
 <ion-view view-title="发现">
   <ion-content>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+      <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" href="#/tab/chats/{{chats[0].id}}">
+      <img src="../img/map.png" alt="">
+      <h2>{{chats[0].name}}</h2>
+      <p>{{chats[0].lastText}}</p>
+    </ion-item>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" href="#/tab/work">
         <img src="../img/map.png" alt="">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
+        <h2>{{chats[1].name}}</h2>
+        <p>{{chats[1].lastText}}</p>
+      </ion-item>
+      <div class="sty"></div>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" href="#/tab/work2">
+        <img src="../img/map.png" alt="">
+        <h2>{{chats[2].name}}</h2>
+        <p>{{chats[2].lastText}}</p>
       </ion-item>
     </ion-list>
   </ion-content>
