@@ -1,5 +1,77 @@
-<ion-view view-title="{{title}}">
-  <ion-content class="padding">
-    <h3>家居</h3>
+<ion-view hide-tabs="true" view-title="{{title}}" class="homeC">
+  <ion-content class="padding conte">
+    <div class="head">
+      <button class=" button button-outline  button-positive active btns service " id="services">服务产品</button>
+      <button class="button button-outline button-positive btns" id="owner">商家</button>
+      <button class="button button-outline button-positive btns says" id="says">评价</button>
+    </div>
+    <div class="homeCon">
+      <ion-item class="menuItem item item-block item-ios codes code">
+        <span ng-click="goOwn()">指纹锁</span>
+      </ion-item>
+      <ion-item class="menuItem item item-block item-ios codes ">
+        <span>大华电子锁</span>
+      </ion-item>
+      <ion-item class="menuItem item item-block item-ios codes ">
+        <span>美的净水机</span>
+      </ion-item>
+      <ion-item class="menuItem item item-block item-ios codes ">
+        <span>洗碗机</span>
+      </ion-item>
+      <ion-item class="menuItem item item-block item-ios codes ">
+        <span>智能马桶盖</span>
+      </ion-item>
+    </div>
+    <div class="mess ">
+      <ul>
+        <li ng-repeat="good in goods">
+          <img src="{{good.img}}" alt="">
+          <div class="message">
+            <span>{{good.title}}</span>
+            <span class="prices">{{good.price}}</span>
+            <span class="already">已售:{{good.sale}}</span>
+            <span class="decrease" ng-click="desc()">-</span>
+            <span class="number">0</span>
+            <div class="add" ng-click="add()">+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="total">
+      <span>共计</span>
+      <span class="num"></span>
+      <span>份，合计</span>
+      <span>￥ <span class="mon"></span>元</span>
+
+    </div>
+    <div id="btns">
+      <button class="button button-outline button-positive selectGood please">请选择</button>
+      <button class="button button-positive selectGood well">选好了</button>
+    </div>
+
+
+
+
+
+
   </ion-content>
 </ion-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

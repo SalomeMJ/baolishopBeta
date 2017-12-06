@@ -47,4 +47,72 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+.factory('Goods', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var goods=[{
+    id:1,
+    img:'img/s1.jpg',
+    title:'安力狮ANNEX指纹锁密码锁',
+    price:'1988元/把',
+    sale:'12'
+  },{
+    id:2,
+    img:'img/s1.jpg',
+    title:'安力狮ANNEX指纹锁密码锁',
+    price:'1988元/把',
+    sale:'12'
+  },{
+    id:3,
+    img:'img/s1.jpg',
+    title:'安力狮ANNEX指纹锁密码锁',
+    price:'1988元/把',
+    sale:'12'
+  },{
+    id:4,
+    img:'img/s1.jpg',
+    title:'安力狮ANNEX指纹锁密码锁',
+    price:'1988元/把',
+    sale:'12'
+  },{
+    id:5,
+    img:'img/s1.jpg',
+    title:'安力狮ANNEX指纹锁密码锁',
+    price:'1988元/把',
+    sale:'12'
+  },{
+    id:6,
+    img:'img/s1.jpg',
+    title:'安力狮ANNEX指纹锁密码锁',
+    price:'1988元/把',
+    sale:'12'
+  },{
+    id:7,
+    img:'img/s1.jpg',
+    title:'安力狮ANNEX指纹锁密码锁',
+    price:'1988元/把',
+    sale:'12'
+  }
+
+
+
+  ];
+  return {
+    all: function() {
+      return goods;
+    },
+    remove: function(good) {
+      goods.splice(goods.indexOf(good), 1);
+    },
+    get: function(goodId) {
+      for (var i = 0; i < goods.length; i++) {
+        if (goods[i].id === parseInt(goodId)) {
+          return goods[i];
+        }
+      }
+      return null;
+    }
+  };
 });
