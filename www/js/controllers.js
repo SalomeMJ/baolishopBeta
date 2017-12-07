@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['starter.controllers.home','starter.controllers.suggestion'])
+angular.module('starter.controllers', ['starter.worker.controllers','starter.worker.controlleres','starter.controllers.suggestion','starter.controllers.home'])
 
 .controller('DashCtrl', function($scope,$state) {
   $scope.sug=function() {
@@ -24,9 +24,6 @@ angular.module('starter.controllers', ['starter.controllers.home','starter.contr
   };
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {

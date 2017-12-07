@@ -6,29 +6,18 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
-  },{
+    name: '周边商圈',
+    kind:'全部分类',
+    kinds:'默认排序',
+    face: ''
+  }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
+    name: '周边工作室',
+    face: '返回'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
+    name: '黑白榜',
+    face: ''
   }];
 
   return {
@@ -45,10 +34,287 @@ angular.module('starter.services', [])
         }
       }
       return null;
-    }
+    },
+    // adr: function () {
+    //   return $http.get('http://localhost/angular/baolishop/edit-user.php').then(function (res) {
+    //     console.log(res);
+    //
+    //   })
+    // }
+
   };
+
+
 })
-.factory('Goods', function() {
+  .factory('Chates',function () {
+    var shop = [{
+      id: 0,
+      name: '青川足道',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }, {
+      id: 1,
+      name: '中国移动营业厅',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }, {
+      id: 2,
+      name: '交通银行',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }, {
+      id: 3,
+      name: '美丽庄园',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    },{
+      id: 4,
+      name: '保利时代',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    },{
+      id: 5,
+      name: '良品铺子',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    },{
+      id: 6,
+      name: '悦动建生',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }];
+    return {
+      otall: function() {
+        return shop;
+      }
+
+    };
+  })
+  .factory('Chatess',function () {
+    var shops = [{
+      id: 0,
+      name: 'dasdasdsa',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }, {
+      id: 1,
+      name: 'fasfasd',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }, {
+      id: 2,
+      name: 'fasfasf',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }, {
+      id: 3,
+      name: 'fasfas',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    },{
+      id: 4,
+      name: 'afasf',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    },{
+      id: 5,
+      name: 'afsafa',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    },{
+      id: 6,
+      name: 'afasf',
+      lastText: '✨✨✨✨✨',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      price: '人均:',
+      money :'￥3元'
+    }];
+    return {
+      othall: function() {
+        return shops;
+      }
+
+    };
+  })
+  .factory('NextChates',function () {
+    var shopes = [{
+      id: 0,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    }, {
+      id: 1,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    }, {
+      id: 2,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    }, {
+      id: 3,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    },{
+      id: 4,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    },{
+      id: 5,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    },{
+      id: 6,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注',
+      hef:'健康咨询'
+    }];
+    return {
+      othalls: function() {
+        return shopes;
+      }
+
+    };
+  })
+  .factory('SecondChates',function () {
+    var shopes1 = [{
+      id: 0,
+      name: '就不告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }, {
+      id: 1,
+      name: '就不告jgh诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }, {
+      id: 2,
+      name: '就不告jgh诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }, {
+      id: 3,
+      name: '就不jhgjgh告诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    },{
+      id: 4,
+      name: '就不告jghjhg诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    },{
+      id: 5,
+      name: '就不告jghj诉你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    },{
+      id: 6,
+      name: '就不告诉jgjh你',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }];
+    return {
+      othalls1: function() {
+        return shopes1;
+      }
+
+    };
+  })
+
+  .factory('Goods', function() {
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
@@ -101,25 +367,58 @@ angular.module('starter.services', [])
     price:'1988元/把',
     sale:'12',
     count:'0'
-  }
-
-
-
-  ];
-  return {
-    all: function() {
-      return goods;
-    },
-    remove: function(good) {
-      goods.splice(goods.indexOf(good), 1);
-    },
-    get: function(goodId) {
-      for (var i = 0; i < goods.length; i++) {
-        if (goods[i].id === parseInt(goodId)) {
-          return goods[i];
+  }];
+    return {
+      all: function() {
+        return goods;
+      },
+      remove: function(good) {
+        goods.splice(goods.indexOf(good), 1);
+      },
+      get: function(goodId) {
+        for (var i = 0; i < goods.length; i++) {
+          if (goods[i].id === parseInt(goodId)) {
+            return goods[i];
+          }
         }
+        return null;
       }
-      return null;
+    };
+  })
+
+
+
+
+.factory('Eval',function () {
+  var them=[{
+    img:'img/person.png',
+    name:'Mr.Sun',
+    time:'1小时前',
+    car:'求2栋地下室的空车位',
+    good:'img/good.png',
+    msg:'img/mes.png',
+    gad:'求车位'
+  },{
+    img:'img/person.png',
+    name:'Mr.Sun',
+    time:'1小时前',
+    car:'求2栋地下室的空车位',
+    good:'img/good.png',
+    msg:'img/mes.png',
+    gad:'求车位'
+  },{
+    img:'img/person.png',
+    name:'Mr.Sun',
+    time:'1小时前',
+    car:'求2栋地下室的空车位',
+    good:'img/good.png',
+    msg:'img/mes.png',
+    gad:'求车位'
+  }]
+  return {
+    othalls2: function() {
+      return them;
     }
+
   };
 });
