@@ -90,8 +90,8 @@ a{
 }
 .item img{
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin: 0;
   vertical-align: middle;
 }
@@ -102,8 +102,9 @@ a{
   background-color: #fff;
 }
 .connects{
-  width: 108%;
-  margin-left: -10px;
+  width: 106%;
+  margin-left: -5px;
+  margin-top: 0;
   /*border:1px solid green;*/
 }
 .item .conn{
@@ -112,37 +113,39 @@ a{
   height: 43px;
   line-height: 43px;
   margin-left: 5px;
-  border-bottom:1px solid #999;
+  border-bottom:1px solid #eaeaea;
   /*border:1px solid red;*/
 }
 .last{
   float: right;
-  margin-right: 0;
+  margin-right: 10px;
   color:#999;
 }
 .conn .last{
   display: inline-block;
-  padding-right: 18px;
+  padding-right: 14px;
 }
 .address{
   border-top:none;
   height: 52px;
   /*border:1px solid red;*/
   width: 106%;
-  margin-left: -10px;
+  margin-left: -8px;
 }
 .address img{
   /*margin-left: 6px;*/
+  margin-top: -8px;
 }
 .address span{
   margin-left: 3px;
 }
 .select{
   width: 106%;
-  height: 124px;
+  /*height: 124px;*/
   background-color: #fff;
   margin-left: -10px;
   border:none;
+  border-bottom:1px solid #eaeaea;
 }
 .select .item{
   border:none;
@@ -157,7 +160,7 @@ a{
 
 }
 .select .seleItem span{
-
+  margin-left: 5px;
   padding-right: 54%;
 
 }

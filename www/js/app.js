@@ -67,6 +67,24 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.decideCode', {
+      url: '/dash/home/decideCode',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/home-codes.html',
+          controller: 'decideCtrl'
+        }
+      }
+    })
+    .state('tab.paywayCode', {
+      url: '/dash/home/decideCode/payways',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/codes-ways.html',
+          controller: 'paywayCtrl'
+        }
+      }
+    })
   .state('tab.chats', {
       url: '/chats',
       views: {

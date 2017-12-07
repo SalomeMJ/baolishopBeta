@@ -1,6 +1,6 @@
 angular.module('starter.controllers.home', [])
 
-  .controller('homeCtrl', function($scope,$stateParams,$location,Goods) {
+  .controller('homeCtrl', function($scope,$stateParams,$location,Goods,$state,$rootScope) {
     $scope.title = '家居';
     //头部按钮
     $('.btns').each(function(i){
@@ -8,9 +8,9 @@ angular.module('starter.controllers.home', [])
         $(this).addClass('active').siblings().removeClass('active');
       });
     });
-    $scope.goOwn=function(){
-      // $location.path('dash-home.html');
-    }
+    // $scope.goOwn=function(){
+    //   // $location.path('dash-home.html');
+    // }
     //服务导航
     $('.codes').each(function(i){
       $('.codes').eq(i).click(function(){
@@ -78,6 +78,32 @@ angular.module('starter.controllers.home', [])
           }
       });
     });
+    $scope.decide=function(){
+      $state.go('tab.decideCode');
+    }
+
+  })
+  //订单
+  .controller('decideCtrl',function($scope,$state){
+
+    $scope.goWay=function(){
+      $state.go('tab.paywayCode');
+    }
+  })
+  //付款方式
+  .controller('paywayCtrl',function($scope,$state,$ionicPopup,$location){
+    //  提示窗口
+    $scope.goHome = function() {
+      var alertPopup = $ionicPopup.alert({
+        title: '提示',
+        template: '支付完成!',
+        okText:'好的'
+      });
+
+      alertPopup.then(function(res) {
+        $location.path('./tab/dash');
+      });
+    };
 
   });
 

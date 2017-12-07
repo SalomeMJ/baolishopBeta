@@ -1,0 +1,203 @@
+.select  .codeItems{
+  color:#000;
+  font-size:18px;
+  border:1px solid blue;
+}
+.decideGoods{
+  width: 98%;
+  height: 52px;
+  line-height: 52px;
+  font-size: 18px;
+  margin-left: 5%;
+  border-bottom:1px solid #eaeaea;
+}
+.decideGoods .goodnames{
+  display: inline-block;
+  width: 60%;
+  height: 50px;
+  font-size:16px;
+  line-height: 50px;
+  border:1px solid red;
+}
+.decideGoods .numPrice{
+  display: inline-block;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  margin-right: 5px;
+  border:1px solid red;
+}
+p.decideMon{
+  width: 98%;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px;
+  margin-left: 5%;
+  color:#000;
+  border:1px solid blue;
+}
+p.decideMon span{
+  display: inline-block;
+  width: 21%;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  float: right;
+  margin-right: 0;
+  border:1px solid blue;
+}
+.serviceTime{
+  display: inline-block;
+  width: 109%;
+  height: 104px;
+  margin-left: -17px;
+  margin-bottom: 15px;
+}
+.serviceTime .times{
+  margin-top: -17px;
+  height: 52px;
+  line-height: 52px;
+  display: inline-block;
+}
+.serviceTime .timeServer span{
+  display: inline-block;
+  height: 52px;
+  line-height: 52px;
+  /*border:1px solid red;*/
+  margin-left: 15px;
+  margin-top: -17px;
+  color:#000;
+  letter-spacing: 1px;
+}
+.serviceTime .timeServer .times{
+  float: right;
+  margin-right: 20px;
+  color:#007aff;
+
+}
+.serviceTime .words{
+  width: 99%;
+  height: 52px;
+  line-height: 52px;
+  margin-left: 10px;
+  border-top:1px solid #eaeaea;
+  /*border:1px solid red;*/
+}
+.serviceTime .words span{
+  display: inline-block;
+  margin-left: 5px;
+  color:#000;
+  font-size: 16px;
+}
+.serviceTime .words input[type="text"] {
+  width: 60%;
+  height: 52px;
+  line-height: 52px;
+  /*border:1px solid red;*/
+  margin-top: -50px;
+  margin-left: 50px;
+  font-size: 16px;
+  color:#000;
+  text-indent: 10px;
+}
+.selectWays{
+  margin-bottom: 100px;
+}
+.selects{
+  width: 106%;
+  height: 42px;
+  line-height: 42px;
+  background-color: #f8f8f8;
+  text-indent: 15px;
+  font-size: 16px;
+  color:#000;
+}
+.quicklyBuy {
+  border-color: transparent;
+  background-color: #387ef5;
+  color: #fff;
+  position: fixed;
+  bottom: -10px;
+  border-radius: 0;
+}
+.wayheader{
+  width: 110%;
+  height: 208px;
+  margin-left: -17px;
+  margin-top: -15px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.wayheader p{
+  height: 52px;
+  line-height: 52px;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  color:#000;
+  /*border:1px solid red;*/
+}
+.wayheader .codeHao{
+  margin-top: -16px;
+}
+.wayheader p .moneys{
+  color:#32db64;
+}
+.selectWays{
+  width: 109%;
+  font-size: 17px;
+  color:#000;
+}
+.selectways{
+  margin-left: -17px;
+}
+.selectWays .selects{
+  color:#000;
+  font-size: 17px;
+}
+.selectWays ion-list ion-radio{
+  border:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -62,4 +62,4 @@ angular.module('starter.worker.controlleres', [])
   .controller('Work2Ctrl', function($scope,Eval) {
     $scope.three=Eval.othalls2();
     console.log($scope.three)
-  })
+  });
