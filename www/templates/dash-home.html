@@ -2,52 +2,76 @@
   <ion-content class="padding conte">
     <div class="head">
       <button class=" button button-outline  button-positive active btns service " id="services">服务产品</button>
-      <button class="button button-outline button-positive btns" id="owner">商家</button>
+      <button class="button button-outline button-positive btns" id="owner" ng-click="nones()">商家</button>
       <button class="button button-outline button-positive btns says" id="says">评价</button>
     </div>
-    <div class="homeCon">
-      <ion-item class="menuItem item item-block item-ios codes code">
-        <span ng-click="goOwn()">指纹锁</span>
-      </ion-item>
-      <ion-item class="menuItem item item-block item-ios codes ">
-        <span>大华电子锁</span>
-      </ion-item>
-      <ion-item class="menuItem item item-block item-ios codes ">
-        <span>美的净水机</span>
-      </ion-item>
-      <ion-item class="menuItem item item-block item-ios codes ">
-        <span>洗碗机</span>
-      </ion-item>
-      <ion-item class="menuItem item item-block item-ios codes ">
-        <span>智能马桶盖</span>
-      </ion-item>
-    </div>
-    <div class="mess ">
-      <ul>
-        <li ng-repeat="good in goods">
-          <img src="{{good.img}}" alt="">
-          <div class="message">
-            <span>{{good.title}}</span>
-            <span class="prices">{{good.price}}</span>
-            <span class="already">已售:{{good.sale}}</span>
-            <span class="decrease" ng-click="desc()">-</span>
-            <span class="number">0</span>
-            <div class="add" ng-click="add()">+</div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="total">
-      <span>共计</span>
-      <span class="num"></span>
-      <span>份，合计</span>
-      <span>￥ <span class="mon"></span>元</span>
+    <div class="priva">
+      <div class="homeCon">
+        <ion-item class="menuItem item item-block item-ios codes code">
+          <span ng-click="goOwn()">指纹锁</span>
+        </ion-item>
+        <ion-item class="menuItem item item-block item-ios codes ">
+          <span>大华电子锁</span>
+        </ion-item>
+        <ion-item class="menuItem item item-block item-ios codes ">
+          <span>美的净水机</span>
+        </ion-item>
+        <ion-item class="menuItem item item-block item-ios codes ">
+          <span>洗碗机</span>
+        </ion-item>
+        <ion-item class="menuItem item item-block item-ios codes ">
+          <span>智能马桶盖</span>
+        </ion-item>
+      </div>
+      <div class="mess">
+        <ul>
+          <li ng-repeat="good in goods">
+            <img src="{{good.img}}" alt="">
+            <div class="message">
+              <span>{{good.title}}</span>
+              <span class="prices">{{good.price}}</span>
+              <span class="already">已售:{{good.sale}}</span>
+              <span class="decrease" ng-click="desc(good)">-</span>
+              <span class="number">{{good.count}}</span>
+              <div class="add" ng-click="add(good)">+</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="total">
+        <span>共计</span>
+        <span class="num"></span>
+        <span>份，合计</span>
+        <span> <span class="mon"></span>元</span>
 
+      </div>
+      <div id="btns ">
+        <button class="button button-outline button-positive selectGood please">请选择</button>
+        <button class="button button-positive selectGood well">选好了</button>
+      </div>
     </div>
-    <div id="btns">
-      <button class="button button-outline button-positive selectGood please">请选择</button>
-      <button class="button button-positive selectGood well">选好了</button>
-    </div>
+    <ion-item class="shopOwn item">
+      <span class="smart">智能家居</span>
+      <div class="services item">
+        <img src="./img/car.png" alt="">
+        <div class="serviceMes">
+          <span class="mass">服务质量:</span>
+          <span class="massNum">5</span>
+          <span>响应速度:</span>
+          <span  class="massNum1">5</span>
+          <p>服务时间：08：00-17：00</p>
+        </div>
+      </div>
+      <div class="phoneNumber">
+        <img src="./img/phone.png" alt="">
+        <span>18888888888</span>
+        <img src="./img/right.png" alt="">
+      </div>
+      <div class="contentTop">
+        <p>内容提要</p>
+        <p>111</p>
+      </div>
+    </ion-item>
 
 
 
