@@ -5,7 +5,7 @@
       <button class="button button-outline button-positive btns" id="owner" ng-click="nones()">商家</button>
       <button class="button button-outline button-positive btns says" id="says">评价</button>
     </div>
-    <div class="priva">
+    <div class="priva  firstPriva">
       <div class="homeCon">
         <ion-item class="menuItem item item-block item-ios codes code">
           <span ng-click="goOwn()">指纹锁</span>
@@ -50,7 +50,7 @@
         <button class="button button-positive selectGood well">选好了</button>
       </div>
     </div>
-    <ion-item class="shopOwn item">
+    <ion-item class="shopOwn item priva">
       <span class="smart">智能家居</span>
       <div class="services item">
         <img src="./img/car.png" alt="">
@@ -62,15 +62,29 @@
           <p>服务时间：08：00-17：00</p>
         </div>
       </div>
-      <div class="phoneNumber">
+      <div class="phoneNumber item">
         <img src="./img/phone.png" alt="">
         <span>18888888888</span>
-        <img src="./img/right.png" alt="">
+        <img src="./img/right.png" alt="" class="next">
       </div>
-      <div class="contentTop">
-        <p>内容提要</p>
+      <div class="contentTop item">
+        <p class="abstract">内容提要</p>
         <p>111</p>
       </div>
+    </ion-item>
+    <ion-item class="assess item priva">
+        <ul>
+          <li>
+             <div class="assessTop">
+               <span class="goodName"></span>
+               <span class="dates"></span>
+             </div>
+            <div class="quality">
+                <span></span>
+            </div>
+            <p class="userSay"></p>
+          </li>
+        </ul>
     </ion-item>
 
 

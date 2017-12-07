@@ -15,6 +15,7 @@ angular.module('starter.controllers.home', [])
     $('.codes').each(function(i){
       $('.codes').eq(i).click(function(){
         $(this).addClass('code').siblings().removeClass('code');
+
       })
     });
     //增加减少
@@ -62,8 +63,37 @@ angular.module('starter.controllers.home', [])
     //  选项卡
     $('.btns').each(function(i){
       $('.btns').eq(i).click(function(){
-        $('.priva')[i].show().siblings().hide();
+          if(i==0){
+            $('.priva')[i].style.display='block';
+            $('.priva')[1].style.display='none';
+            $('.priva')[2].style.display='none';
+          }else if(i==1){
+            $('.priva')[i].style.display='block';
+            $('.priva')[0].style.display='none';
+            $('.priva')[2].style.display='none';
+          }else if(i==2){
+            $('.priva')[i].style.display='block';
+            $('.priva')[1].style.display='none';
+            $('.priva')[0].style.display='none';
+          }
       });
     });
 
-  })
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -222,6 +222,60 @@ a{
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+/*上拉菜单*/
+.action-sheet .button {
+  height: 67px;
+}
+.action-sheet-up {
+  border-radius: 10px;
+}
+.action-sheet .button.destructive {
+  color: #007aff;
+}
+.action-sheet-group {
+  border-radius: 11px;
+}
+.popup-container.active .popup {
+  border-radius: 15px;
+  height: 120px;
+  background-color: #fff;
+  /*border:1px solid red;*/
+}
+.popup-title {
+  font-size: 18px;
+}
+.popup-head {
+  border:none;
+}
+.popup-body {
+  padding: 10px;
+  overflow: auto;
+  color: #999;
+  text-indent: 20px;
+  /*padding-bottom: 25px;*/
+  margin-top: -19px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.popup-buttons {
+  width: 100%;
+  min-height:10px;
+  margin-left: 0;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.popup .button.button-positive {
+  border-color: transparent;
+  background-color:#fff ;
+  color:#387ef5 ;
+  min-height: 30px;
+  margin-top: -5px;
+  font-size: 18px;
+  font-weight: bolder;
+  /*border:1px solid blue;*/
+
+}
 /*家居*/
 .homeCon{
   width: 90px;
@@ -382,6 +436,9 @@ a{
 .priva{
   display: none;
 }
+.firstPriva{
+  display: block;
+}
 .shopOwn{
   width: 106%;
   height: 579px;
@@ -398,12 +455,13 @@ a{
   font-size: 17px;
   color:#000;
   line-height: 45px;
-  background-color: #f8f8f8;
+  background-color: #efefef;
 
 }
 .shopOwn .services{
   background-color: #fff;
   border-top:none;
+  height: 70px;
 }
 .shopOwn .services img{
   display: inline-block;
@@ -427,7 +485,7 @@ a{
   color:#000;
   line-height: 20px;
   /*border:1px solid blue;*/
-  padding-top: 25px;
+  /*padding-top: 25px;*/
 
 }
 .serviceMes .massNum{
@@ -436,6 +494,90 @@ a{
 }
 .serviceMes .massNum1{
   color:#387ef5;
+}
+.phoneNumber{
+  width: 106%;
+  margin-left: -10px;
+  height: 52px;
+  line-height: 12px;
+  border:1px solid #c8c7cc;
+  background-color: #fff;
+  margin-top: 20px;
+  font-size: 17px;
+  color:#000;
+}
+.phoneNumber img{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 30px;
+  margin-top: -1px;
+  transform:rotate(-10deg);
+}
+.phoneNumber .next{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  transform: rotate(0deg);
+  margin-left: 50%;
+}
+.contentTop{
+  height: 104px;
+  margin-top: 20px;
+  font-size: 18px;
+  color:#000;
+}
+.contentTop p{
+  width: 106%;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px;
+  color:#000;
+  padding: 0;
+}
+.contentTop .abstract{
+  width: 106%;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px;
+  color:#000;
+  padding: 0;
+  margin-top: -17px;
+  border-bottom:1px solid #999;
+  /*border:1px solid blue;*/
+}
+.assess{
+  width: 106%;
+  margin-left: -10px;
+}
+.assess ul {
+  width: 106%;
+  margin-top: -17px;
+  /*border:1px solid red;*/
+}
+.assess ul li{
+  width: 100%;
+  height: 110px;
+  border-bottom:1px solid #999;
+}
+.assess ul li .assessTop{
+  height: 40px;
+  line-height: 40px;
+  border:1px solid blue;
+}
+.assess ul li .assessTop .dates{
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border:1px solid green;
+  float: right;
+  margin-right: 20px;
+}
+.assess ul li  .quality{
+  width: 100%;
+  height: 30px;
+  border:1px solid red;
 }
 
 
