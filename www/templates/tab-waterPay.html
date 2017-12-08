@@ -1,0 +1,70 @@
+<ion-view view-title="选择付款方式" hide-tabs="true">
+  <ion-content >
+   <div class="codeNum">订单编号:1946465454</div>
+    <div class="codeNum">订单服务:送水服务</div>
+    <div class="codeNum">合计金额:${{waterTotal}}元</div>
+    <div class="codeNum">应付金额:${{waterTotal}}元</div>
+
+    <div class="item goodsItemWrap" >
+      <p class="waterTitle">服务时间</p>
+
+
+      <div class="item goodsItem goodsItemWrap2 " >
+        <!--<div class="goods">-->
+          <!--<span>应付金额</span>-->
+          <!--<span class="phoneNumber">${{waterTotal}}元</span>-->
+        <label class="item item-radio item-icon-left">
+          <img src="../img/yue.png" alt="" class="payStyle">
+
+          <input type="radio" name="group" value="go" checked="checked">
+
+          <div class="radio-content">
+            <div class="item-content">
+             账户余额支付
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+
+        <label class="item item-radio item-icon-left">
+          <img src="../img/zhifubao.png" alt=""  class="payStyle">
+
+          <input type="radio" name="group" value="支付宝支付" checked="checked">
+
+          <div class="radio-content">
+            <div class="item-content">
+           支付宝支付
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+
+        <label class="item item-radio item-icon-left">
+          <img src="../img/weixin.png" alt=""  class="payStyle">
+          <input type="radio" name="group" value="微信支付" checked="checked">
+
+          <div class="radio-content">
+            <div class="item-content">
+             微信支付
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+
+        <label class="item item-radio item-icon-left itemPay">
+          <img src="../img/yinhangka.png" alt=""  class="payStyle">
+          <input type="radio" name="group" value="银行卡" checked="checked">
+
+          <div class="radio-content">
+            <div class="item-content">
+              银行卡
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+        <button class="button button-full button-positive" ng-click="paySuccess()">确认支付1</button>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>
