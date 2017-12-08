@@ -114,6 +114,15 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.pinglun', {
+      url: '/pinglun',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/tab-pinglun.html',
+          controller: 'Work2Ctrl'
+        }
+      }
+    })
     .state('tab.own', {
       url: '/own',
       views: {

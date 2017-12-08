@@ -19,21 +19,24 @@
 .kinds{
   margin-left: -4px;
 }
-.padding{
+.padd1{
   text-align: center;
   position: relative;
 }
-.padding img{
+.padd1 img{
   position: absolute;
   top:30px;
   left: 10px;
 }
-.padding p {
+.padd1 p {
   text-align: left;
   margin-left: 40px;
   font-size: 0.9rem;
 }
-.padding p:nth-child(2){
+.ml{
+  /*display: inline-block;*/
+}
+.padd1 p:nth-child(2){
   color: #000;
 }
 .bar{

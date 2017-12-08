@@ -59,7 +59,33 @@ angular.module('starter.worker.controlleres', [])
 
   }
 })
-  .controller('Work2Ctrl', function($scope,Eval) {
+  .controller('Work2Ctrl', function($scope,$state,Eval) {
     $scope.three=Eval.othalls2();
     console.log($scope.three)
+    $scope.pinglun=function () {
+
+      $state.go('tab.pinglun')
+    }
+
   })
+  .controller( 'Work2Ctrl',['$scope','$ionicActionSheet','$timeout' ,function($scope,$ionicActionSheet,$timeout){
+    $scope.show = function() {
+
+      var hideSheet = $ionicActionSheet.show({
+        buttons: [
+          { text: '<b>发布</b>' },
+        ],
+        cancel: function() {
+          // add cancel code..
+        },
+        buttonClicked: function(index) {
+          return true;
+        }
+      });
+
+      $timeout(function() {
+        hideSheet();
+      }, 2000);
+
+    };
+  }])

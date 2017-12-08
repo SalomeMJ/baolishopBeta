@@ -1,6 +1,6 @@
 
 <ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
+  <ion-content class="padding padd1">
 
 
         <span ng-click="show1()" class="kind">{{chat.kind}}</span>
@@ -9,11 +9,13 @@
 
     <ion-item ng-repeat="x in chatt" type="item-text-wrap" href="#/tab/chats/{{chat.id}}" class="photo">
       <img ng-src="{{x.face}}" style="width: 40px; height: 40px">
-      <p class="top">{{x.name}}</p>
-      <p>{{x.lastText}}</p>
-      <p class="line">{{x.say}}</p>
-      <span>{{x.price}}</span>
-      <span>{{x.money}}</span>
+
+        <p class="top">{{x.name}}</p>
+        <p>{{x.lastText}}</p>
+        <p class="line">{{x.say}}</p>
+        <span>{{x.price}}</span>
+        <span>{{x.money}}</span>
+
 
     </ion-item>
 
