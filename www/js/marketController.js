@@ -2,7 +2,7 @@ angular.module('market', [])
   .controller('DashMarketCtrl', function ($scope, $state,$rootScope) {
 
 
-    $scope.choo = "请选择";
+    $scope.choo = "请选择1";
 
     $scope.add = function (item) {
       item.amount++;
