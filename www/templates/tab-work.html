@@ -1,0 +1,54 @@
+<ion-view view-title="发现">
+  <ion-content>
+    <ion-list>
+
+      <div class="wrap">
+        <span class="around" ng-click="show3()">周边</span>
+        <span class="hose" ng-click="show4()" href="#/tab/work/work2">本小区</span>
+        <span class="myattend" ng-click="show5()">我关注的</span>
+      </div>
+      <div class="add">
+        <div ng-repeat="x in other" class="aboutIt">
+          <img ng-src="{{x.face}}" style="width: 40px;height: 40px;">
+          <div style="display: inline-block" class="tiaopi">
+            <p>{{x.name}}</p>
+            <span>{{x.num}}</span>
+            <span class="says">{{x.fans}}</span>
+            <button>{{x.att}}</button>
+            <p>{{x.say}}</p>
+          </div>
+          <p class="ask">{{x.hef}}</p>
+
+        </div>
+      </div>
+      <div class="add1">
+        <div ng-repeat="x in other1" class="aboutIt1">
+          <img ng-src="{{x.face}}" style="width: 40px;height: 40px;">
+          <div style="display: inline-block" class="tiaopi1">
+            <p>{{x.name}}</p>
+            <span>{{x.num}}</span>
+            <span class="says1">{{x.fans}}</span>
+            <button>{{x.att}}</button>
+            <p>{{x.say}}</p>
+          </div>
+          <p class="ask1">{{x.hef}}</p>
+
+        </div>
+      </div>
+      <div class="add2">
+        <div ng-repeat="x in other1" class="aboutIt2">
+          <img ng-src="{{x.face}}" style="width: 40px;height: 40px;">
+          <div style="display: inline-block" class="tiaopi2">
+            <p>{{x.name}}</p>
+            <span>{{x.num}}</span>
+            <span class="says2">{{x.fans}}</span>
+            <button>{{x.att}}</button>
+            <p>{{x.say}}</p>
+          </div>
+          <p class="ask2">{{x.hef}}</p>
+
+        </div>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
