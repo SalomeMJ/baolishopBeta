@@ -49,24 +49,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','w
       }
     }
   })
-    .state('tab.suggestion', {
-      url: '/dash/suggestion',
-      views: {
-        'tab-dash': {
-          templateUrl: 'templates/dash-suggestion.html',
-          controller: 'suggestCtrl'
-        }
-      }
-    })
-    .state('tab.home', {
-      url: '/dash/home',
-      views: {
-        'tab-dash': {
-          templateUrl: 'templates/dash-home.html',
-          controller: 'homeCtrl'
-        }
-      }
-    })
 
 
 
@@ -79,7 +61,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','w
         }
       }
     })
-
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
       views: {
@@ -99,33 +80,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','w
       }
     }
   })
-    .state('tab.work', {
-      url: '/work',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-work.html',
-          controller: 'WorkCtrl'
-        }
-      }
-    })
-    .state('tab.work2', {
-      url: '/work2',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-work2.html',
-          controller: 'Work2Ctrl'
-        }
-      }
-    })
-    .state('tab.pinglun', {
-      url: '/pinglun',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-pinglun.html',
-          controller: 'Work2Ctrl'
-        }
-      }
-    })
+
     .state('tab.own', {
       url: '/own',
       views: {

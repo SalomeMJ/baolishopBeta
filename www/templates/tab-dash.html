@@ -1,32 +1,47 @@
 <ion-view view-title="保利尚城">
-  <ion-content class="padding" id="content">
-    <div id="banners">
-      <span>宗旨1：给业主提供最温馨的服务</span>
-    </div>
-    <ion class="row indexMenu">
-      <ion-col button text-center class="col cols1"  ng-click="water()">
-        <img src="./img/water.png" alt="">
-        <span>送水</span>
-      </ion-col>
-      <ion-col  button text-center  class="col cols2"  ng-click="payment()">
-        <img src="./img/pay.png" alt="">
-        <span>缴费</span>
-      </ion-col>
-      <ion-col button text-center class="col cols3"  ng-click="market()">
-        <img src="./img/shop.png" alt="">
-        <span>超市</span>
-      </ion-col>
-      <ion-col button text-center class="col cols4 item-remove-animate " ng-click="sug()">
-        <img src="./img/suggestion.png" alt="">
-        <span>建议</span>
-      </ion-col>
-      <ion-col button text-center class="col cols5 item-remove-animate"  ng-click="home()">
-        <img src="./img/home.png" alt="">
-        <span>家居</span>
-      </ion-col>
-    </ion>
-
   <ion-content class="padding " id="banners">
     <span>宗旨1：给业主提供最温馨的服务</span>
+    <span>宗旨1：给业主提供最温馨的服务</span>
+    <span>宗旨1：给业主提供最温馨的服务</span>
+
   </ion-content>
+  <div class="row indexMenu">
+    <div class="col water" ng-click="water()">
+      <div class="waterImg waterImg1">
+        <span class = "ion-waterdrop "></span>
+      </div>
+
+      <p>送水</p>
+    </div>
+    <div class="col water" ng-click="payment()">
+      <div class="waterImg  waterImg2">
+        <span class = "ion-ios-home "></span>
+      </div>
+
+      <p>缴费</p>
+
+    </div>
+    <div class="col water" ng-click="market()">
+      <div class="waterImg  waterImg3">
+        <span class = "ion-ios-cart "></span>
+      </div>
+
+      <p>超市</p>
+    </div>
+    <div class="col water">
+      <div class="waterImg  waterImg4">
+        <span class = "ion-ios-telephone"></span>
+      </div>
+
+      <p>建议</p>
+    </div>
+    <div class="col water">
+      <div class="waterImg  waterImg5">
+        <img src="../img/sofa.png" alt="">
+      </div>
+
+      <p>家居</p>
+    </div>
+  </div>
+
 </ion-view>
