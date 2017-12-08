@@ -1,5 +1,5 @@
 <ion-view view-title="选择付款方式" hide-tabs="true">
-  <ion-content>
+  <ion-content class="wayCon">
     <div class="wayContents item">
       <div class="wayheader item">
         <p class="codeHao">订单编号：LC20170105175032</p>
@@ -8,28 +8,29 @@
         <p>应付金额：<span class="moneys"></span>元</p>
       </div>
 
-
       <!--选择支付方式-->
       <div class=" selectWays selectways" >
         <p class="selects">选择支付方式</p>
-        <ion-list>
-          <ion-radio  ng-model="choice" ng-value="'A'" >
+        <ion-list class="waySele">
+          <ion-radio  ng-model="choice" ng-value="'A'" class="wayItems">
              <img src="./img/pay1.png" alt="">
             <span>账户余额支付</span>
           </ion-radio>
-          <ion-radio ng-model="choice" ng-value="'B'">
+          <ion-radio ng-model="choice" ng-value="'B'"  class="wayItems">
             <img src="./img/pay2.png" alt="">
             <span>支付宝支付</span>
           </ion-radio>
-          <ion-radio ng-model="choice" ng-value="'B'">
+          <ion-radio ng-model="choice" ng-value="'C'"  class="wayItems">
             <img src="./img/pay3.png" alt="">
             <span>微信支付</span>
           </ion-radio>
-          <ion-radio ng-model="choice" ng-value="'B'">
+          <ion-radio ng-model="choice" ng-value="'D'"  class="wayItems lastWay">
             <img src="./img/pay4.png" alt="">
             <span>线下支付</span>
           </ion-radio>
         </ion-list>
+
+
       </div>
     </div>
   </ion-content>

@@ -23,9 +23,11 @@
   display: inline-block;
   width: 20%;
   height: 50px;
+  font-size: 16px;
   line-height: 50px;
   float: right;
-  margin-right: 5px;
+  margin-right: 55px;
+  color:#32db64;
   border:1px solid red;
 }
 p.decideMon{
@@ -44,14 +46,15 @@ p.decideMon span{
   line-height: 52px;
   text-align: center;
   float: right;
-  margin-right: 0;
+  margin-right: 52px;
+  color:#32db64;
   border:1px solid blue;
 }
 .serviceTime{
   display: inline-block;
-  width: 109%;
+  width: 100%;
   height: 104px;
-  margin-left: -17px;
+  margin-left: -10px;
   margin-bottom: 15px;
 }
 .serviceTime .times{
@@ -112,6 +115,7 @@ p.decideMon span{
   text-indent: 15px;
   font-size: 16px;
   color:#000;
+  /*border:1px solid blue;*/
 }
 .quicklyBuy {
   border-color: transparent;
@@ -128,6 +132,7 @@ p.decideMon span{
   margin-top: -15px;
   background-color: #fff;
   margin-bottom: 15px;
+  /*border:1px solid red;*/
 }
 .wayheader p{
   height: 52px;
@@ -143,23 +148,72 @@ p.decideMon span{
 }
 .wayheader p .moneys{
   color:#32db64;
+  border:1px solid red;
 }
-.selectWays{
-  width: 109%;
-  font-size: 17px;
-  color:#000;
+span.money.ng-binding {
+  color: #32db64;
+  float: right;
+  margin-right: 40px;
+}
+.wayContents.item {
+  background: #efefef;
 }
 .selectways{
-  margin-left: -17px;
+  width: 110%;
+  font-size: 17px;
+  color:#000;
+  margin-left: -28px;
+  margin-top: 20px;
+  background-color: #efefef;
+  /*border:1px solid red;*/
+  /*background-color: red;*/
 }
 .selectWays .selects{
   color:#000;
   font-size: 17px;
 }
-.selectWays ion-list ion-radio{
-  border:0;
+.selectWays i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+  margin-right: 30px;
 }
+.selectways ion-list.waySele .wayItems{
+  width: 106%;
+  border:none;
+  height: 61px;
+  line-height: 61px;
+  margin-top: -5px;
+}
+.selectways ion-list.waySele .wayItems span{
+  display: inline-block;
+  border-bottom:1px solid #eaeaea;
+  width: 106%;
+  height: 60px;
+  line-height:60px;
+  margin-top: -20px;
+  vertical-align: top;
 
+}
+.selectways ion-list.waySele img{
+  display: inline-block;
+  /*border:1px solid red;*/
+  width: 40px;
+  height: 35px;
+  vertical-align: top;
+  margin-top: -5px;
+}
+.selectways i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+  vertical-align: top;
+  margin-top: -15px;
+  margin-right: 10px;
+}
+.popup-body {
+  padding: 10px;
+  overflow: auto;
+  color: #999;
+  margin-top: -19px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 15px;
+}
 
 
 

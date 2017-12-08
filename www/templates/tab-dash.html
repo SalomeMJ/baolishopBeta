@@ -1,5 +1,25 @@
 <ion-view view-title="保利尚城">
+  <ion-nav-buttons side="left">
+    <i class="iconfont icon-scanner"><img src="./img/scanner.png" alt=""></i>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <i class="iconfont icon-message"><img src="./img/message.png" alt=""></i>
+  </ion-nav-buttons>
+
   <ion-content class="padding" id="content">
+    <!-- start 轮播图-->
+    <ion-slide-box auto-play="true" does-continue="true" slide-interval=2000>
+      <ion-slide>
+        <div class="box banner"><img src="./img/slide1.jpg" /> </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box banner"><img src="./img/slide1.jpg" /></div>
+      </ion-slide>
+      <ion-slide >
+        <div class="box banner"><img src="./img/slide1.jpg" /></div>
+      </ion-slide>
+    </ion-slide-box>
+    <!-- end 轮播图-->
     <div id="banners">
       <span>宗旨1：给业主提供最温馨的服务</span>
     </div>
