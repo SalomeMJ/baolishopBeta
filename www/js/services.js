@@ -408,7 +408,6 @@ angular.module('starter.services', [])
     othalls2: function() {
       return them;
     }
-
   };
 })
   .factory('Says',function () {
