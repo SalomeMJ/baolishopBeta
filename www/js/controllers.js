@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['starter.worker.controllers','starter.worker.controlleres','starter.controllers.suggestion','starter.controllers.home'])
+angular.module('starter.controllers', ['starter.worker.controlleres','starter.controllers.suggestion','starter.controllers.home'])
 
   .controller('DashCtrl', function ($scope, $state) {
     $scope.water = function () {
@@ -11,7 +11,13 @@ angular.module('starter.controllers', ['starter.worker.controllers','starter.wor
     $scope.market=function () {
       $state.go("tab.market")
 
-    }
+    },
+      $scope.sug=function(){
+        $state.go("tab.suggestion")
+      },
+      $scope.home=function(){
+        $state.go("tab.home")
+      }
 
   })
 

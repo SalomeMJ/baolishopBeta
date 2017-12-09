@@ -1,7 +1,7 @@
 .select  .codeItems{
   color:#000;
   font-size:18px;
-  border:1px solid blue;
+  /*border:1px solid blue;*/
 }
 .decideGoods{
   width: 98%;
@@ -17,7 +17,7 @@
   height: 50px;
   font-size:16px;
   line-height: 50px;
-  border:1px solid red;
+  /*border:1px solid red;*/
 }
 .decideGoods .numPrice{
   display: inline-block;
@@ -28,7 +28,7 @@
   float: right;
   margin-right: 55px;
   color:#32db64;
-  border:1px solid red;
+  /*border:1px solid red;*/
 }
 p.decideMon{
   width: 98%;
@@ -37,7 +37,7 @@ p.decideMon{
   font-size: 16px;
   margin-left: 5%;
   color:#000;
-  border:1px solid blue;
+  /*border:1px solid blue;*/
 }
 p.decideMon span{
   display: inline-block;
@@ -48,7 +48,7 @@ p.decideMon span{
   float: right;
   margin-right: 52px;
   color:#32db64;
-  border:1px solid blue;
+  /*border:1px solid blue;*/
 }
 .serviceTime{
   display: inline-block;
@@ -148,7 +148,7 @@ p.decideMon span{
 }
 .wayheader p .moneys{
   color:#32db64;
-  border:1px solid red;
+  /*border:1px solid red;*/
 }
 span.money.ng-binding {
   color: #32db64;
@@ -162,7 +162,7 @@ span.money.ng-binding {
   width: 110%;
   font-size: 17px;
   color:#000;
-  margin-left: -28px;
+  margin-left: -8px;
   margin-top: 20px;
   background-color: #efefef;
   /*border:1px solid red;*/

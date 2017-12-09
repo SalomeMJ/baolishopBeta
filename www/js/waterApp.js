@@ -1,4 +1,4 @@
-angular.module('waterApp', [])
+angular.module('waterApp', ['water'])
   .config(function($stateProvider, $urlRouterProvider) {
 
     // Ionic uses AngularUI Router which uses the concept of states
