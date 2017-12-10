@@ -8,8 +8,9 @@
   height: 52px;
   line-height: 52px;
   font-size: 18px;
-  margin-left: 5%;
+  margin-left: 20px;
   border-bottom:1px solid #eaeaea;
+  /*border:1px solid red;*/
 }
 .decideGoods .goodnames{
   display: inline-block;
@@ -35,7 +36,7 @@ p.decideMon{
   height: 52px;
   line-height: 52px;
   font-size: 16px;
-  margin-left: 5%;
+  margin-left: 30px;
   color:#000;
   /*border:1px solid blue;*/
 }

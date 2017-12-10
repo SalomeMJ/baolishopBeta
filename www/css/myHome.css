@@ -90,9 +90,9 @@ a{
   background-color: #fff;
 }
 .connects{
-  width: 106%;
-  margin-left: 10px;
-  margin-top: 0;
+  width: 90%;
+  margin-left: 25px;
+  margin-top: 15px;
   /*border:1px solid green;*/
 }
 .item .conn{
@@ -101,12 +101,12 @@ a{
   height: 43px;
   line-height: 43px;
   margin-left: 5px;
-  border-bottom:1px solid #eaeaea;
+  /*border-bottom:1px solid #eaeaea;*/
   /*border:1px solid red;*/
 }
 .last{
   float: right;
-  margin-right: 55px;
+  margin-right: 20px;
   color:#999;
 }
 .conn .last{
@@ -117,15 +117,36 @@ a{
   border-top:none;
   height: 52px;
   /*border:1px solid red;*/
-  width: 106%;
+  width: 99%;
+  line-height: 42px;
+  margin-top: -10px;
   margin-left: 8px;
+
 }
 .address img{
-  /*margin-left: 6px;*/
-  margin-top: -8px;
+  margin-left: 16px;
+  vertical-align: middle;
 }
 .address span{
-  margin-left: 3px;
+  margin-right:40px;
+  vertical-align: middle;
+  /*border-top:1px solid #eaeaea;*/
+  /*border:1px solid red;*/
+
+}
+.address .conn{
+  display: inline-block;
+  width: 94%;
+  height: 43px;
+  line-height: 43px;
+  margin-left: 5px;
+  border-top:1px solid #eaeaea;
+  /*border:1px solid red;*/
+}
+.address .conn .last{
+  display: inline-block;
+ /*border:1px solid red;*/
+  margin-right: 55px;
 }
 .select{
   width: 106%;
@@ -148,7 +169,7 @@ a{
 
 }
 .select .seleItem span{
-  margin-left: 5px;
+  margin-left: 35px;
   padding-right: 48%;
 
 }
@@ -278,9 +299,13 @@ a{
 .homeCon .codes{
   font-size: 12px;
   width: 100px;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
   margin-left: -5px;
   border: none;
   background-color: #efefef;
+  /*border:1px solid red;*/
 }
 .homeCon .code{
   background-color: #fff;
