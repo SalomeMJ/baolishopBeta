@@ -1,0 +1,40 @@
+<ion-view  hide-tabs="true" view-title="{{title}}">
+  <ion-content class="padding contents ">
+    <div class="list">
+      <div class="item item-divider connects">
+        <img src="./img/ren.png" alt="">
+        <div class="conn">
+          <span>联系人：Tonge</span>
+          <span class="last">188****8888</span>
+        </div>
+
+      </div>
+      <a class="item address" href="">
+        <img src="./img/坐标.png" alt="">
+        <span>郑州市保利时代A1栋2202</span>
+        <span class="last"> ></span>
+      </a>
+    </div>
+    <div class="select list item">
+      <div class="item seleItem">
+          <span>请选择</span>
+          <button class="button button-positive " id="suggestion">建议</button>
+          <button class="button button-outline button-positive">咨询</button>
+      </div>
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="请填写您的建议" class="suggestion">
+        </label>
+      </div>
+    </div>
+    <div class="select list item posts">
+      <div class="item seleItem">
+        <span>上传图片</span>
+      </div>
+      <div class="item" id="imgs">
+        <img src="./img/post.png" alt="" ng-click="showMenu()">
+      </div>
+    </div>
+    <button class="button button-positive complete" ng-click="showAlert()">填好了</button>
+  </ion-content>
+</ion-view>
