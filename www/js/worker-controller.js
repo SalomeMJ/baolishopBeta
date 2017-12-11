@@ -3,7 +3,7 @@ angular.module('starter.worker.controlleres', [])
   $scope.chat = Chats.get($stateParams.chatId);
 
   $scope.chatt = Chates.otall($stateParams.chatId);
-  console.log($scope.chatt);
+  // console.log($scope.chatt);
   var s1=document.getElementsByClassName('kind');
   var s2=document.getElementsByClassName('kinds');
   s1[0].style.borderBottom='2px solid #2894FF';
@@ -61,14 +61,14 @@ angular.module('starter.worker.controlleres', [])
 })
   .controller('Work2Ctrl', function($scope,$state,Eval) {
     $scope.three=Eval.othalls2();
-    console.log($scope.three)
+    console.log($scope.three);
     $scope.pinglun=function () {
 
       $state.go('tab.pinglun')
     }
 
   })
-  .controller( 'Work2Ctrl',['$scope','$ionicActionSheet','$timeout' ,function($scope,$ionicActionSheet,$timeout){
+  .controller( 'Work3Ctrl',['$scope','$ionicActionSheet','$timeout' ,function($scope,$ionicActionSheet,$timeout){
     $scope.show = function() {
 
       var hideSheet = $ionicActionSheet.show({

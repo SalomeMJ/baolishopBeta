@@ -119,7 +119,7 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
       views: {
         'tab-chats': {
           templateUrl: 'templates/tab-pinglun.html',
-          controller: 'Work2Ctrl'
+          controller: 'Work3Ctrl'
         }
       }
     })

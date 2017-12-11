@@ -414,7 +414,7 @@ angular.module('starter.services', ['ionic'])
     good:'img/good.png',
     msg:'img/mes.png',
     gad:'求车位'
-  }]
+  }];
   return {
     othalls2: function() {
       return them;
