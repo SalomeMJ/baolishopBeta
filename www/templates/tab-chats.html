@@ -2,8 +2,21 @@
   <ion-content>
     <link href="../css/style1.css" rel="stylesheet">
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <h3>{{chat.name}}</h3>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" href="#/tab/work1">
+        <img src="../img/map.png" alt="">
+        <h2>{{chats[0].name}}</h2>
+        <p>{{chats[0].lastText}}</p>
+      </ion-item>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" href="#/tab/work">
+        <img src="../img/map.png" alt="">
+        <h2>{{chats[1].name}}</h2>
+        <p>{{chats[1].lastText}}</p>
+      </ion-item>
+      <div class="sty"></div>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" href="#/tab/work2">
+        <img src="../img/map.png" alt="">
+        <h2>{{chats[2].name}}</h2>
+        <p>{{chats[2].lastText}}</p>
       </ion-item>
     </ion-list>
   </ion-content>

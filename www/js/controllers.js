@@ -39,6 +39,8 @@ angular.module('starter.controllers', ['starter.worker.controlleres','starter.co
 
   .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
     $scope.chat = Chats.get($stateParams.chatId);
+    console.log($scope.chat)
+
   })
 
 .controller('AccountCtrl', function($scope) {
