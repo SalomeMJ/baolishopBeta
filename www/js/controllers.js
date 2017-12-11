@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['starter.worker.controlleres','starter.controllers.suggestion','starter.controllers.home'])
+angular.module('starter.controllers', ['starter.worker.controlleres'])
 
   .controller('DashCtrl', function ($scope, $state) {
     $scope.water = function () {

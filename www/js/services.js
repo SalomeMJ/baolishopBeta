@@ -7,8 +7,6 @@ angular.module('starter.services', [])
   var chats = [{
     id: 0,
     name: '周边商圈',
-    kind:'全部分类',
-    kinds:'默认排序',
     face: ''
   }, {
     id: 1,

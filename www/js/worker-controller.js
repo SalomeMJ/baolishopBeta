@@ -22,6 +22,7 @@ angular.module('starter.worker.controlleres', [])
   }
 
 })
+//  55
 .controller('WorkCtrl', function($scope,$stateParams,NextChates,SecondChates) {
   $scope.other=NextChates.othalls();
   $scope.other1=SecondChates.othalls1($stateParams);

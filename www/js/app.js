@@ -5,8 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
-  'waterApp','marketApp','market','starter.worker.controlleres'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','starter.worker.controlleres'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -50,42 +49,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
       }
     }
   })
-    .state('tab.suggestion', {
-      url: '/dash/suggestion',
-      views: {
-        'tab-dash': {
-          templateUrl: 'templates/dash-suggestion.html',
-          controller: 'suggestCtrl'
-        }
-      }
-    })
-    .state('tab.home', {
-      url: '/dash/home',
-      views: {
-        'tab-dash': {
-          templateUrl: 'templates/dash-home.html',
-          controller: 'homeCtrl'
-        }
-      }
-    })
-    .state('tab.decideCode', {
-      url: '/dash/home/decideCode',
-      views: {
-        'tab-dash': {
-          templateUrl: 'templates/home-codes.html',
-          controller: 'decideCtrl'
-        }
-      }
-    })
-    .state('tab.paywayCode', {
-      url: '/dash/home/decideCode/payways',
-      views: {
-        'tab-dash': {
-          templateUrl: 'templates/codes-ways.html',
-          controller: 'paywayCtrl'
-        }
-      }
-    })
+
+
+
+
   .state('tab.chats', {
       url: '/chats',
       views: {
@@ -95,25 +62,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
         }
       }
     })
-    // .state('tab.chat-detail', {
-    //   url: '/chats/:chatId',
-    //   views: {
-    //     'tab-chats': {
-    //       templateUrl: 'templates/chat-detail.html',
-    //       controller: 'ChatDetailCtrl'
-    //     }
-    //   }
-    // })
 
-  .state('tab.account', {
-    url: '/account',
-    views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
-      }
-    }
-  })
+
+
     .state('tab.work', {
       url: '/work',
       views: {
@@ -147,15 +98,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
         'tab-chats': {
           templateUrl: 'templates/tab-pinglun.html',
           controller: 'Work3Ctrl'
-        }
-      }
-    })
-    .state('tab.own', {
-      url: '/own',
-      views: {
-        'tab-own': {
-          templateUrl: 'templates/tab-own.html',
-          controller: 'ownCtrl'
         }
       }
     });
