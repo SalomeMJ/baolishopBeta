@@ -1,13 +1,26 @@
 angular.module('starter.controllers', ['starter.worker.controlleres','starter.controllers.suggestion','starter.controllers.home'])
 
-.controller('DashCtrl', function($scope,$state) {
-  $scope.sug=function() {
-    $state.go('tab.suggestion');
-  };
-  $scope.home=function() {
-    $state.go('tab.home');
-  };
-})
+  .controller('DashCtrl', function ($scope, $state) {
+    $scope.water = function () {
+      // alert("即将跳转")
+      $state.go("tab.water");
+    };
+    $scope.payment=function () {
+      $state.go("tab.payment")
+    }
+    $scope.market=function () {
+      $state.go("tab.market")
+
+    },
+      $scope.sug=function(){
+        $state.go("tab.suggestion")
+      },
+      $scope.home=function(){
+        $state.go("tab.home")
+      }
+
+  })
+
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
@@ -24,6 +37,9 @@ angular.module('starter.controllers', ['starter.worker.controlleres','starter.co
   };
 })
 
+  .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
+    $scope.chat = Chats.get($stateParams.chatId);
+  })
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {

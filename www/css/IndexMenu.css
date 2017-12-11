@@ -1,0 +1,288 @@
+.indexMenu{
+  margin-top: 30px;
+  height: 75px;
+}
+.water{
+   text-align: center;
+}
+.waterImg{
+  width: 50px;
+  height: 50px;
+  /*background-color:#f90;*/
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin:0 auto;
+}
+.waterImg1,.waterImg5{
+  background-color: #f90;
+}
+.waterImg2{
+  background-color: #32cd99;
+}
+.waterImg3{
+  background-color: #8e6b32;
+}
+.waterImg4{
+  background-color: #32cd32;
+}
+.waterImg>span{
+
+  font-size: 40px;
+  color: #ffffff;
+}
+.waterImg>img{
+  width: 40px;
+  vertical-align: middle;
+}
+.water>p{
+  color: #808080;
+  font-size: 12px;
+
+}
+.item{
+  padding: 0;
+}
+.frame-wrapper{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+.frame{
+  display: inline-block;
+  border-bottom: 1px solid #aeacb4;
+  width: 79%;
+  /*float: right;*/
+}
+.items{
+  height: 100px;
+  padding: 0;
+}
+.phoneNumber{
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.frame-wrapper>span{
+  display: inline-block;
+  font-size: 25px;
+  color: #aeacb4;
+  text-align: center;
+  line-height: 50px;
+  width: 75px;
+}
+.goodsItem{
+  width:95%;
+  float: right;
+  border-left: 0px;
+  padding: 16px 0;
+}
+
+.goodsItemWrap{
+  margin-top: 20px;
+
+}
+.goods{
+  font-size: 15px;
+
+}
+.goodsprice{
+  font-size: 12px;
+  color: #00ff00;
+}
+.goodscount{
+  font-size: 12px;
+  color: #aeacb4;
+}
+.bar-footer1{
+
+  bottom:50px;
+
+}
+.bar-footer2{
+
+
+  background-position: bottom;
+  /*z-index: 10000;*/
+}
+.bar-footer3{
+
+  background-position: bottom;
+}
+.bar-footer2>button,.bar-footer3>button{
+  margin: 0 auto;
+}
+input.ng-pristine.ng-untouched.ng-valid.ng-not-empty {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.addDel {
+  display: inline-block;
+  float: right;
+}
+/*送水第三级*/
+.phoneNumber{
+  float: right;
+}
+.lists{
+  width: 80%;
+  float: right;
+  text-align: left;
+}
+.item.goodsItemWrap {
+  margin-top: 0;
+}
+p.waterTitle {
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: lightgray;
+  margin-top: 20px;
+}
+input[type="text"] {
+  display: inline-block;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+.item.goodsItemWrap1 {
+  margin-top: 30px;
+}
+
+
+button.button.button-block.button-positive {
+  height: 50px;
+  font-size: 18px;
+  margin: 15px 0;
+  margin-bottom: 50px;
+  bottom: 30px;
+}
+.goodsItemWrap2{
+  margin-bottom:60px;
+}
+.radio-content,.itemPay{
+  overflow: inherit;
+  border-left: 0px;
+
+}
+.item-content{
+  text-indent: 30px;
+}
+.payStyle{
+  display: inline-block;
+  position: absolute;
+  top:15px;
+  width: 30px;
+  z-index: 5;
+}
+.codeNum{
+  height: 52px;
+  line-height: 52px;
+  font-size: 18px;
+  text-indent: 20px;
+}
+.paymentGroupWrap {
+  text-align: center;
+  padding: 30px;
+}
+.item.item-divider.item-button-right {
+  height: 46px;
+  line-height: 46px;
+}
+.item.payinfo {
+  height: 52px;
+  line-height: 52px;
+  text-indent: 20px;
+
+}
+.listWrap {
+  text-indent: 30px;
+
+}
+.textWrap {
+  display: inline-block;
+  width: 75%;
+  float: right;
+  margin-top: 10px;
+
+}
+.cartWrap {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  font-size: 30px;
+  background: deepskyblue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 56px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.itemHeight{
+  height: 62px;
+  line-height: 62px;
+  text-indent: 20px;
+}
+.itemHeight>span{
+
+  text-indent: 50px;
+
+
+}
+.itemHeight i.ion-ios-telephone {
+  margin-right: 30px;
+
+  font-size: 25px;
+}
+.item-divider>h2{
+  height: 40px;
+  line-height: 40px;
+  text-indent: 20px;
+}
+.topfull {
+  height: 48px;
+}
+.itemWrapper  div,.itemWrapper p {
+  padding: 5px;
+}
+.item.itemWrapper {
+  width: 85%;
+  margin: 0 auto;
+  border-left: 0;
+  border-right: 0;
+}
+.pushTime{
+  float: right;
+  ;
+}
+.itemWrapper  div{
+  font-size: 12px;
+}
+.leftNav {
+  width: 30%;
+  background: lightgray;
+  text-align: center;
+  position: fixed;
+  height: 575px;
+}
+.leftNav>p{
+
+  padding: 10px 0;
+
+  margin: 0;
+
+}
+.rightNav {
+  display: inline-block;
+  width: 70%;
+  margin-left: 30%;
+  background-color: red;
+}
+.tab-bg{
+  background-color: #fff;
+
+}
+
+

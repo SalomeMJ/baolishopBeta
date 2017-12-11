@@ -1,0 +1,180 @@
+<ion-view view-title="送水服务" hide-tabs="true">
+  <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+    <div class="tabs">
+      <div class="tab-item" ng-class="{true:'active',false:''}[active1]" ng-click="service()">
+        产品服务
+
+      </div>
+      <div class="tab-item"  ng-class="{true:'active',false:''}[active2]" ng-click="shopOwn()">
+        商家
+      </div>
+      <div class="tab-item"  ng-class="{true:'active',false:''}[active3]" ng-click="discuss()">
+        评价
+      </div>
+    </div>
+  </div>
+  <ion-content>
+
+    <div class="topfull">123</div>
+    <!--产品服务-->
+
+    <div class="serviceWrap" ng-show="services">
+      <div class="leftNav">
+        <p ng-class="{true:'tab-bg',false:''}[tab_bg1]" ng-click="mimian()">米面</p>
+        <p ng-class="{true:'tab-bg',false:''}[tab_bg2]" ng-click="liangyou()">粮油</p>
+        <p ng-class="{true:'tab-bg',false:''}[tab_bg3]" ng-click="fuchan()">副产品</p>
+        <p ng-class="{true:'tab-bg',false:''}[tab_bg4]" ng-click="yanjiu()">烟酒</p>
+      </div>
+
+      <div class="rightNav">
+
+        <!--商品下单界面-->
+        <div class="item goodsItemWrap" >
+          <div class="item goodsItem" ng-repeat="x in waterData">
+            <!--<div class="goods">-->
+            <!--<div>$parent.conf[$index-1]</div>-->
+            <div class="goods">
+              {{x.waterName}}
+            </div>
+            <div class="goodsprice">
+              <span>{{x.waterPrice}}元/桶</span>
+              <div class="addDel">
+                <button ng-click="del(x)">- </button>
+
+                <input type="number" ng-model="x.amount" style="border: 1px solid">
+
+                <button ng-click="add(x)">+</button>
+              </div>
+
+              <!--<i>{{}}</i>-->
+              <!--<button>+</button>-->
+            </div>
+            <div class="goodscount">
+              已售:{{x.waterNum}}
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!--商家-->
+
+    <div class="showOwnWrap" ng-show="shopOwns">
+      <div class="list">
+        <div class="item  item-divider ">
+
+          <h2>智能家居</h2>
+
+        </div>
+        <div class="item item-avatar">
+          <div class="cartWrap">
+            <i class="ion-ios-cart-outline"></i>
+
+          </div>
+          <div class="textWrap">
+            <h2>服务质量:2 响应速度:5</h2>
+            <p>服务时间:8:00-17:00</p>
+          </div>
+
+        </div>
+
+        <div class="list">
+          <div class="item itemHeight">
+            <i class="ion-ios-telephone"></i>
+            <span>18888888</span>
+
+          </div>
+
+        </div>
+
+        <div class="list">
+          <div class="item itemHeight">
+
+            <span>666</span>
+
+          </div>
+          <div class="item itemHeight">
+
+            <span>11</span>
+
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+
+    </div>
+
+    <!--评价-->
+    <div class="discussWrap" ng-show="userDiscuss">
+      <div class="list">
+        <div class="item itemWrapper">
+          <div>
+            <span>客户1</span>
+            <span class="pushTime">2016-12-12&nbsp;23:00:00</span>
+          </div>
+
+          <p>服务质量※※※※※响应速度※※※※※</p>
+          <p>系统默认评价</p>
+        </div>
+
+        <div class="item itemWrapper">
+          <div>
+            <span>客户1</span>
+            <span class="pushTime">2016-12-12&nbsp;23:00:00</span>
+          </div>
+
+          <p>服务质量※※※※※响应速度※※※※※</p>
+          <p>系统默认评价</p>
+        </div>
+
+
+        <div class="item itemWrapper">
+          <div>
+            <span>客户1</span>
+            <span class="pushTime">2016-12-12&nbsp;23:00:00</span>
+          </div>
+
+
+          <p>服务质量※※※※※响应速度※※※※※</p>
+          <p>系统默认评价</p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+  </ion-content>
+  <!--一共多少分合计-->
+  <div class="bar bar-footer bar-balanced bar-footer1 " ng-show="price">
+    <div class="title" >共计{{num}}份,合计 <span>${{waterTotal}}</span>元</div>
+
+  </div>
+
+  <div class="bar bar-footer bar-footer3">
+
+    <button class="button button-positive" ng-click="skipPay()">{{choo}}</button>
+
+  </div>
+
+
+
+</ion-view>
+

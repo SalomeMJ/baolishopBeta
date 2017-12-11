@@ -1,4 +1,4 @@
-angular.module('starter.services', ['ionic'])
+angular.module('starter.services', [])
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
@@ -322,66 +322,55 @@ angular.module('starter.services', ['ionic'])
     id:1,
     img:'img/s1.jpg',
     title:'安力狮ANNEX指纹锁密码锁',
-    price:'1988元/把',
+    price:'1988元',
     sale:'12',
     count:0
   },{
     id:2,
     img:'img/s1.jpg',
     title:'安力狮ANNEX指纹锁密码锁',
-    price:'1988元/把',
+    price:'1988元',
     sale:'12',
     count:'0'
   },{
     id:3,
     img:'img/s1.jpg',
     title:'安力狮ANNEX指纹锁密码锁',
-    price:'1988元/把',
+    price:'1988元',
     sale:'12',
     count:'0'
   },{
     id:4,
     img:'img/s1.jpg',
     title:'安力狮ANNEX指纹锁密码锁',
-    price:'1988元/把',
+    price:'1988元',
     sale:'12',
     count:'0'
   },{
     id:5,
     img:'img/s1.jpg',
     title:'安力狮ANNEX指纹锁密码锁',
-    price:'1988元/把',
+    price:'1988元',
     sale:'12',
     count:'0'
   },{
     id:6,
     img:'img/s1.jpg',
     title:'安力狮ANNEX指纹锁密码锁',
-    price:'1988元/把',
+    price:'1988元',
     sale:'12',
     count:'0'
   },{
     id:7,
     img:'img/s1.jpg',
     title:'安力狮ANNEX指纹锁密码锁',
-    price:'1988元/把',
+    price:'1988元',
     sale:'12',
     count:'0'
   }];
     return {
       all: function() {
         return goods;
-      },
-      remove: function(good) {
-        goods.splice(goods.indexOf(good), 1);
-      },
-      get: function(goodId) {
-        for (var i = 0; i < goods.length; i++) {
-          if (goods[i].id === parseInt(goodId)) {
-            return goods[i];
-          }
-        }
-        return null;
       }
     };
   })
@@ -419,6 +408,104 @@ angular.module('starter.services', ['ionic'])
     othalls2: function() {
       return them;
     }
-
   };
-});
+})
+  .factory('Says',function () {
+    var sayData=[{
+      id:'1',
+      goodName:'Tonge1',
+      dates:'2016-12-28 09:20:22',
+      quality:'服务质量',
+      sudo:'响应速度',
+      message:'电脑椅子不错'
+
+    },{
+      id:'2',
+      goodName:'Tonge2',
+      dates:'2016-12-28 09:20:22',
+      quality:'服务质量',
+      sudo:'响应速度',
+      message:'111'
+    },{
+      id:'3',
+      goodName:'Tonge3',
+      dates:'2016-12-28 09:20:22',
+      quality:'服务质量',
+      sudo:'响应速度',
+      message:'222'
+    }]
+    return {
+      all: function() {
+        return sayData;
+      }
+    };
+  })
+  // .factory('Codes', function() {
+  //   // Might use a resource here that returns a JSON array
+  //
+  //   // Some fake testing data
+  //   var code=[{
+  //     id:1,
+  //     title:'安力狮ANNEX指纹锁密码锁',
+  //     price:'1988元',
+  //     count:0
+  //   },{
+  //     id:2,
+  //     img:'img/s1.jpg',
+  //     title:'安力狮ANNEX指纹锁密码锁',
+  //     price:'1988元',
+  //     sale:'12',
+  //     count:'0'
+  //   },{
+  //     id:3,
+  //     img:'img/s1.jpg',
+  //     title:'安力狮ANNEX指纹锁密码锁',
+  //     price:'1988元',
+  //     sale:'12',
+  //     count:'0'
+  //   },{
+  //     id:4,
+  //     img:'img/s1.jpg',
+  //     title:'安力狮ANNEX指纹锁密码锁',
+  //     price:'1988元',
+  //     sale:'12',
+  //     count:'0'
+  //   },{
+  //     id:5,
+  //     img:'img/s1.jpg',
+  //     title:'安力狮ANNEX指纹锁密码锁',
+  //     price:'1988元',
+  //     sale:'12',
+  //     count:'0'
+  //   },{
+  //     id:6,
+  //     img:'img/s1.jpg',
+  //     title:'安力狮ANNEX指纹锁密码锁',
+  //     price:'1988元',
+  //     sale:'12',
+  //     count:'0'
+  //   },{
+  //     id:7,
+  //     img:'img/s1.jpg',
+  //     title:'安力狮ANNEX指纹锁密码锁',
+  //     price:'1988元',
+  //     sale:'12',
+  //     count:'0'
+  //   }];
+  //   return {
+  //     all: function() {
+  //       return goods;
+  //     },
+  //     remove: function(good) {
+  //       goods.splice(goods.indexOf(good), 1);
+  //     },
+  //     get: function(goodId) {
+  //       for (var i = 0; i < goods.length; i++) {
+  //         if (goods[i].id === parseInt(goodId)) {
+  //           return goods[i];
+  //         }
+  //       }
+  //       return null;
+  //     }
+  //   };
+  // })

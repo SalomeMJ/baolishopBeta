@@ -5,7 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
+  'waterApp','marketApp','market','starter.worker.controlleres'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -67,6 +68,24 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.decideCode', {
+      url: '/dash/home/decideCode',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/home-codes.html',
+          controller: 'decideCtrl'
+        }
+      }
+    })
+    .state('tab.paywayCode', {
+      url: '/dash/home/decideCode/payways',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/codes-ways.html',
+          controller: 'paywayCtrl'
+        }
+      }
+    })
   .state('tab.chats', {
       url: '/chats',
       views: {
@@ -76,7 +95,6 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
         }
       }
     })
-
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
       views: {

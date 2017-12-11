@@ -29,7 +29,7 @@
             <img src="{{good.img}}" alt="">
             <div class="message">
               <span>{{good.title}}</span>
-              <span class="prices">{{good.price}}</span>
+              <span class="prices">{{good.price}}/把</span>
               <span class="already">已售:{{good.sale}}</span>
               <span class="decrease" ng-click="desc(good)">-</span>
               <span class="number">{{good.count}}</span>
@@ -47,7 +47,7 @@
       </div>
       <div id="btns ">
         <button class="button button-outline button-positive selectGood please">请选择</button>
-        <button class="button button-positive selectGood well">选好了</button>
+        <button class="button button-positive selectGood well" ng-click="decide()">选好了</button>
       </div>
     </div>
     <ion-item class="shopOwn item priva">
@@ -72,17 +72,20 @@
         <p>111</p>
       </div>
     </ion-item>
-    <ion-item class="assess item priva">
+    <ion-item class="assess  priva">
         <ul>
-          <li>
+          <li ng-repeat="x in says">
              <div class="assessTop">
-               <span class="goodName"></span>
-               <span class="dates"></span>
+               <span class="goodName">{{x.goodName}}</span>
+               <span class="dates">{{x.dates}}</span>
              </div>
             <div class="quality">
-                <span></span>
+              <span>{{x.quality}}:</span>
+              <img src="./img/star.png" alt="">
+              <span>{{x.sudo}}:</span>
+              <img src="./img/star.png" alt="">
             </div>
-            <p class="userSay"></p>
+            <p class="userSay">{{x.message}}</p>
           </li>
         </ul>
     </ion-item>
