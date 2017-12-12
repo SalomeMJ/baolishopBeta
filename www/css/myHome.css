@@ -19,6 +19,7 @@ a{
   width: 100%;
   height: 68px;
   margin-top: -15px;
+  margin-left: -4px;
   background-color: #fff;
 }
 .row .col{
@@ -28,7 +29,7 @@ a{
   /*line-height: 50px;*/
   border-radius:50%;
   margin-right: 15px;
-  margin-left: 5px;
+  margin-left: 10px;
   font-size: 13px;
   color:#999;
   text-align: center;
@@ -91,13 +92,13 @@ a{
 }
 .connects{
   width: 90%;
-  margin-left: 25px;
+  margin-left: 15px;
   margin-top: 15px;
   /*border:1px solid green;*/
 }
 .item .conn{
   display: inline-block;
-  width: 94%;
+  width: 99%;
   height: 43px;
   line-height: 43px;
   margin-left: 5px;
@@ -117,10 +118,10 @@ a{
   border-top:none;
   height: 52px;
   /*border:1px solid red;*/
-  width: 99%;
+  width: 106%;
   line-height: 42px;
   margin-top: -10px;
-  margin-left: 8px;
+  margin-left: -1px;
 
 }
 .address img{
@@ -146,7 +147,7 @@ a{
 .address .conn .last{
   display: inline-block;
  /*border:1px solid red;*/
-  margin-right: 55px;
+  margin-right: 63px;
 }
 .select{
   width: 106%;
@@ -164,13 +165,14 @@ a{
   height: 42px;
   background-color: #f8f8f8;
   font-size: 16px;
+  margin-left: -15px;
   /*border:1px solid red;*/
   padding-top: 10px;
 
 }
 .select .seleItem span{
   margin-left: 35px;
-  padding-right: 48%;
+  padding-right: 42%;
 
 }
 .select .seleItem button{
@@ -184,6 +186,8 @@ a{
 }
 .select .list input{
   font-size: 16px;
+  height: 100px;
+  margin-left: 20px;
 }
 .posts{
   height: 150px;
@@ -191,7 +195,7 @@ a{
 }
 .posts #imgs{
   height: 107px;
-  margin-left: 0;
+  margin-left: 10px;
   /*border:1px solid green;*/
 }
 #imgs img{
@@ -491,13 +495,15 @@ button.button.button-positive.selectGood.well {
   display: inline-block;
   width: 58px;
   height: 58px;
-  margin: 10px;
-  margin-top: -25px;
+  margin: 15px;
+  margin-top: 5px;
 
   /*vertical-align: middle;*/
 }
 .serviceMes{
   display: inline-block;
+  vertical-align: middle;
+  margin-top: -10px;
   /*border:1px solid red;*/
 
 }
@@ -520,23 +526,25 @@ button.button.button-positive.selectGood.well {
   color:#387ef5;
 }
 .phoneNumber{
-  width: 106%;
-  margin-left: -8px;
+  width: 100%;
+  /*margin-left: -8px;*/
   height: 52px;
-  line-height: 12px;
+  line-height: 52px;
   border:1px solid #c8c7cc;
   background-color: #fff;
   margin-top: 20px;
+  margin-left: 50px;
   font-size: 17px;
   color:#000;
+  /*border:1px solid red;*/
 }
 .phoneNumber img{
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin-left: 15px;
+  margin-left: 25px;
   margin-top: -1px;
-  transform:rotate(-10deg);
+  transform:rotate(-5deg);
 }
 .phoneNumber .next{
   display: inline-block;
@@ -547,37 +555,40 @@ button.button.button-positive.selectGood.well {
 }
 .contentTop{
   height: 104px;
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 18px;
   color:#000;
+  /*border:1px solid red;*/
 }
 .contentTop p{
-  width: 106%;
+  width: 90%;
   height: 52px;
   line-height: 52px;
   font-size: 16px;
   color:#000;
   padding: 0;
+  margin-left: 15px;
 }
 .contentTop .abstract{
-  width: 106%;
+  width: 100%;
   height: 52px;
   line-height: 52px;
   font-size: 16px;
   color:#000;
   padding: 0;
-  margin-top: -17px;
+  /*margin-top: -17px;*/
+  /*margin-left: 15px;*/
   border-bottom:1px solid #999;
   /*border:1px solid blue;*/
 }
 .assess{
-  width: 106%;
+  width:104%;
   /*height: 330px;*/
-  margin-left: -18px;
+  margin-left: -15px;
 }
 .assess ul {
-  width: 106%;margin: 0;
-  margin-top: -17px;
+  width: 104%;margin: 0;
+  /*margin-top: -17px;*/
 
   /*border:1px solid red;*/
 }
@@ -623,7 +634,9 @@ button.button.button-positive.selectGood.well {
 ion-content.padding.conte.scroll-content.ionic-scroll.has-header {
   background: #e9e9e9;
 }
-
+label.item.item-radio.ng-valid.ng-not-empty {
+  margin-left: -20px;
+}
 
 
 

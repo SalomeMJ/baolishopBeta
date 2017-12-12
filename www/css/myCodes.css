@@ -36,7 +36,7 @@ p.decideMon{
   height: 52px;
   line-height: 52px;
   font-size: 16px;
-  margin-left: 30px;
+  margin-left: 20px;
   color:#000;
   /*border:1px solid blue;*/
 }
@@ -55,28 +55,37 @@ p.decideMon span{
   display: inline-block;
   width: 100%;
   height: 104px;
-  margin-left: -10px;
+  margin-left: 10px;
   margin-bottom: 15px;
+  /*border:1px solid red;*/
 }
 .serviceTime .times{
   margin-top: -17px;
   height: 52px;
   line-height: 52px;
   display: inline-block;
+  /*border:1px solid blue;*/
+}
+.serviceTime .timeServer{
+  height: 52px;
+  line-height: 52px;
+  /*border:1px solid red;*/
 }
 .serviceTime .timeServer span{
   display: inline-block;
   height: 52px;
   line-height: 52px;
-  /*border:1px solid red;*/
   margin-left: 15px;
-  margin-top: -17px;
   color:#000;
   letter-spacing: 1px;
 }
 .serviceTime .timeServer .times{
+  display: inline-block;
+  height: 52px;
+  line-height: 52px;
   float: right;
-  margin-right: 20px;
+  margin-top: 2px;
+  margin-right: 50px;
   color:#007aff;
 
 }
@@ -96,14 +105,20 @@ p.decideMon span{
 }
 .serviceTime .words input[type="text"] {
   width: 60%;
-  height: 52px;
-  line-height: 52px;
+  height: 48px;
+  line-height: 48px;
   /*border:1px solid red;*/
-  margin-top: -50px;
-  margin-left: 50px;
+  margin-top: -5px;
   font-size: 16px;
   color:#000;
   text-indent: 10px;
+}
+.item.shouldPay {
+  height: 52px;
+  line-height: 52px;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 18px;
 }
 .selectWays{
   margin-bottom: 100px;
@@ -116,20 +131,23 @@ p.decideMon span{
   text-indent: 15px;
   font-size: 16px;
   color:#000;
+  margin-bottom: 0;
   /*border:1px solid blue;*/
 }
-.quicklyBuy {
-  border-color: transparent;
-  background-color: #387ef5;
-  color: #fff;
+
+button.button.button-block.button-positive {
+  height: 50px;
+  font-size: 18px;
+  margin: 15px 0;
+  margin-bottom: 50px;
+  bottom: 0;
   position: fixed;
-  bottom: -10px;
-  border-radius: 0;
+  bottom: -50px;
 }
 .wayheader{
   width: 110%;
   height: 208px;
-  margin-left: -17px;
+  margin-left: -7px;
   margin-top: -15px;
   background-color: #fff;
   margin-bottom: 15px;
@@ -140,6 +158,7 @@ p.decideMon span{
   line-height: 52px;
   margin: 0;
   padding: 0;
+  margin-left: 30px;
   font-size: 17px;
   color:#000;
   /*border:1px solid red;*/
@@ -163,7 +182,7 @@ span.money.ng-binding {
   width: 110%;
   font-size: 17px;
   color:#000;
-  margin-left: -8px;
+  margin-left: 8px;
   margin-top: 20px;
   background-color: #efefef;
   /*border:1px solid red;*/
@@ -173,8 +192,8 @@ span.money.ng-binding {
   color:#000;
   font-size: 17px;
 }
-.selectWays i.radio-icon.disable-pointer-events.icon.ion-checkmark {
-  margin-right: 30px;
+.selectWays .radio-content {
+  width:100%;
 }
 .selectways ion-list.waySele .wayItems{
   width: 106%;
@@ -183,38 +202,46 @@ span.money.ng-binding {
   line-height: 61px;
   margin-top: -5px;
 }
-.selectways ion-list.waySele .wayItems span{
+.selectways  .wayItems span{
   display: inline-block;
   border-bottom:1px solid #eaeaea;
-  width: 106%;
-  height: 60px;
-  line-height:60px;
+  width: 100%;
+  height:58px;
+  line-height:58px;
   margin-top: -20px;
+  /*margin-left: -20px;*/
   vertical-align: top;
-
 }
 .selectways ion-list.waySele img{
   display: inline-block;
-  /*border:1px solid red;*/
   width: 40px;
   height: 35px;
   vertical-align: top;
   margin-top: -5px;
+  margin-left: -20px;
 }
 .selectways i.radio-icon.disable-pointer-events.icon.ion-checkmark {
   vertical-align: top;
   margin-top: -15px;
-  margin-right: 10px;
 }
-.popup-body {
-  padding: 10px;
-  overflow: auto;
-  color: #999;
-  margin-top: -19px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eaeaea;
-  font-size: 15px;
+.selectways  label.item.item-radio.ng-valid.ng-not-empty {
+  margin-left: -0px;
+  width: 85%;
+  height: 60px;
+  text-indent: 0;
+  padding: 0;
 }
+/*.popup-body {*/
+  /*padding: 10px;*/
+  /*overflow: auto;*/
+  /*color: #999;*/
+  /*margin-top: -19px;*/
+  /*padding-bottom: 20px;*/
+  /*border-bottom: 1px solid #eaeaea;*/
+  /*font-size: 15px;*/
+  /*border:1px solid red;*/
+/*}*/
+
 
 
 

@@ -326,16 +326,16 @@ angular.module('starter.services', [])
   },{
     id:2,
     img:'img/s1.jpg',
-    title:'安力狮ANNEX指纹锁密码锁',
+    title:'德施曼指纹锁 小嘀家用指纹锁',
     price:'1988元',
-    sale:'12',
+    sale:'8',
     count:'0'
   },{
     id:3,
     img:'img/s1.jpg',
-    title:'安力狮ANNEX指纹锁密码锁',
+    title:'WISSMISS 指纹锁家智能门锁',
     price:'1988元',
-    sale:'12',
+    sale:'2',
     count:'0'
   },{
     id:4,
@@ -347,16 +347,16 @@ angular.module('starter.services', [])
   },{
     id:5,
     img:'img/s1.jpg',
-    title:'安力狮ANNEX指纹锁密码锁',
+    title:'德施曼指纹锁 小嘀家用指纹锁',
     price:'1988元',
-    sale:'12',
+    sale:'8',
     count:'0'
   },{
     id:6,
     img:'img/s1.jpg',
-    title:'安力狮ANNEX指纹锁密码锁',
+    title:'WISSMISS 指纹锁家用高门锁',
     price:'1988元',
-    sale:'12',
+    sale:'2',
     count:'0'
   },{
     id:7,
