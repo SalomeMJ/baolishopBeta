@@ -1,0 +1,89 @@
+<ion-view view-title="确认订单" hide-tabs="true">
+  <link rel="stylesheet" href="./css/myHome.css">
+  <link rel="stylesheet" href="./css/myCodes.css">
+  <ion-content>
+    <div class=" contents ">
+      <div class="list">
+        <div class="item item-divider connects">
+          <img src="./img/ren.png" alt="">
+          <div class="conn">
+            <span>联系人：Tonge</span>
+            <span class="last">188****8888</span>
+          </div>
+
+        </div>
+        <a class="item address" href="">
+          <img src="./img/坐标.png" alt="">
+          <div class="conn">
+            <span>郑州市保利时代A1栋2202 </span>
+            <span class="last"> ></span>
+          </div>
+        </a>
+      </div>
+      <div class="select list item">
+        <div class="item seleItem codeItems">
+          <span>送水服务</span>
+        </div>
+        <div class="list">
+          <ul class="decideGoods">
+            <li ng-repeat="code in codes">
+              <span class="goodnames">{{code.title}}</span>
+              <span class="numPrice">{{code.price}}*{{code.count}}</span>
+            </li>
+          </ul>
+          <p class="decideMon">合计金额: <span>{{totalMon}}元</span></p>
+        </div>
+      </div>
+
+      <!--服务时间-->
+      <div class="item serviceTime" >
+        <div class=" timeServer" >
+            <span>服务时间11</span>
+            <span class="times">18:00-21:00</span>
+        </div>
+        <div class="words" >
+            <span>留言:</span>
+          <input type="text" >
+        </div>
+
+
+      </div>
+
+      <!--选择支付方式-->
+      <div class=" selectWays" >
+        <p class="selects">选择支付方式</p>
+        <ion-list>
+          <ion-radio  ng-model="choice" ng-value="'A'" >线下支付</ion-radio>
+          <ion-radio ng-model="choice" ng-value="'B'">线上支付</ion-radio>
+        </ion-list>
+        <div class="item shouldPay" >
+          <div class="should">
+            <span>应付：</span>
+            <span class="money">{{totalMon}}元</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <!--<div class="bar ">-->
+    <button class="button button-block button-positive quicklyBuy" ng-click="goWay()" >立即下单</button>
+  <!--</div>-->
+</ion-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
