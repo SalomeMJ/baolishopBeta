@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','starter.worker.controlleres','starter.controllers.home','starter.controllers.suggestion'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','starter.worker.controlleres','starter.controllers.home','starter.controllers.suggestion','starter.controllers.notice'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -86,9 +86,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
         }
       }
     })
-
-
-
+    //智慧管家
+    .state('tab.notice', {
+      url: '/dash/notice',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/dash-notice.html',
+          controller: 'noticeCtrl'
+        }
+      }
+    })
+    //业主自治
+    .state('tab.yezhu', {
+      url: '/dash/yezhu',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/dash-yezhu.html',
+          controller: 'yezhuCtrl'
+        }
+      }
+    })
+    //友邻社交
+    .state('tab.friend', {
+      url: '/dash/friend',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/dash-friend.html',
+          controller: 'friCtrl'
+        }
+      }
+    })
   .state('tab.chats', {
       url: '/chats',
       views: {

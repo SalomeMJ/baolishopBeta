@@ -1,0 +1,44 @@
+<ion-view  hide-tabs="true" view-title="友邻社交">
+  <link rel="stylesheet" href="./css/dash-fri.css">
+  <ion-content class="padding contents ">
+    <div class="yeContent">
+      <div class="yeItem">
+        <img src="./img/n1.png" alt="">
+        <p>爱分享</p>
+      </div>
+      <div class="yeItem">
+        <img src="./img/n2.png" alt="">
+        <p>工作室</p>
+      </div>
+    </div>
+
+    <!--**********************************************-->
+        <ion-list>
+          <div ng-repeat="x in three" class="bank">
+            <div class="bank3"></div>
+            <div class="bank1">
+              <img ng-src="{{x.img}}" alt="" style="width: 40px;height: 40px; vertical-align: top">
+              <div class="bank2">
+                <p>{{x.name}}</p>
+                <p>{{x.time}}</p>
+                <span>{{x.gad}}</span>
+              </div>
+            </div>
+            <p class="bankp">{{x.car}}</p>
+            <div class="bank4">
+          <span>
+            <img ng-src="{{x.good}}" alt="" style="width: 15px;height: 15px; vertical-align: middle">
+            <span ng-click="dianzan()">12点赞</span>
+          </span>
+              <span>
+            <!--sdasd-->
+             <img ng-src="{{x.msg}}" alt="" style="width: 15px;height: 15px; vertical-align: middle">
+            <span ng-click="pinglun()">4评论</span>
+          </span>
+            </div>
+          </div>
+          <!--344135-->
+        </ion-list>
+    <!--**********************************************-->
+  </ion-content>
+</ion-view>

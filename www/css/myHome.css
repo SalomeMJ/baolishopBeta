@@ -17,10 +17,11 @@ a{
 }
 .row{
   width: 100%;
-  height: 68px;
-  margin-top: -15px;
+  height: 75px;
+  margin-top: -21px;
   margin-left: -4px;
   background-color: #fff;
+  /*border:1px solid red;*/
 }
 .row .col{
   display: inline-block;
