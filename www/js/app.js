@@ -136,6 +136,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
           controller: 'Work3Ctrl'
         }
       }
+    })
+    .state('tab.phone', {
+      url: '/phone',
+      views: {
+        'tab-phone': {
+          templateUrl: 'templates/tab-phone.html',
+          controller: 'PhoneCtrl'
+        }
+      }
     });
 
   // if none of the above states are matched, use this as the fallback

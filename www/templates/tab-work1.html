@@ -1,12 +1,12 @@
 
-<ion-view view-title="{{chat.name}}">
+<ion-view view-title="{{chat.name}}" hide-tabs="true">
   <ion-content class="padding padd1">
     <link href="../css/style1.css" rel="stylesheet">
       <div class="wrapSpan">
         <span ng-click="show1()" class="kind">全部分类</span>
         <span ng-click="show2()" class="kinds">默认排序</span>
       </div>
-
+    <hr style="margin-top: 5px;">
 
 
     <ion-item ng-repeat="x in chatt" type="item-text-wrap" href="#/tab/work1" class="photo">

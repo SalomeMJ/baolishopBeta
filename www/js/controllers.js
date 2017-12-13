@@ -52,6 +52,9 @@ angular.module('starter.controllers', ['starter.worker.controlleres'])
     $scope.title='我的';
   })
 
+  .controller('PhoneCtrl', function($scope) {
+    $scope.title='手机';
+  })
 
 //自定义指令隐藏底部导航
   .directive('hideTabs', function($rootScope) {
