@@ -17,6 +17,15 @@ angular.module('starter.controllers', ['starter.worker.controlleres'])
       },
       $scope.home=function(){
         $state.go("tab.home")
+      },
+      $scope.notice=function(){
+        $state.go("tab.notice")
+      },
+      $scope.yezhu=function(){
+        $state.go("tab.yezhu")
+      },
+      $scope.fri=function(){
+        $state.go("tab.friend")
       }
 
   })

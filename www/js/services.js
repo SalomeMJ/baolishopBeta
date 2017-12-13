@@ -408,6 +408,30 @@ angular.module('starter.services', [])
     }
   };
 })
+  .factory('Friends',function () {
+    var them=[{
+      img:'img/person.png',
+      name:'Mr.Sun',
+      time:'1小时前',
+      car:'求2栋地下室的空车位',
+      good:'img/good.png',
+      msg:'img/mes.png',
+      gad:'求车位'
+    },{
+      img:'img/person.png',
+      name:'Mr.Sun',
+      time:'1小时前',
+      car:'求2栋地下室的空车位',
+      good:'img/good.png',
+      msg:'img/mes.png',
+      gad:'求车位'
+    }];
+    return {
+      all: function() {
+        return them;
+      }
+    };
+  })
   .factory('Says',function () {
     var sayData=[{
       id:'1',
