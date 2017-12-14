@@ -59,6 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
         }
       }
     })
+    //jjj
     .state('tab.home', {
       url: '/dash/home',
       views: {
