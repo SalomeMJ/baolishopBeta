@@ -26,8 +26,10 @@ angular.module('starter.controllers', ['starter.worker.controlleres'])
       },
       $scope.fri=function(){
         $state.go("tab.friend")
+      },
+      $scope.workHome=function(){
+        $state.go("tab.workHome")
       }
-
   })
 
 
