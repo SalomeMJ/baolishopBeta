@@ -311,7 +311,71 @@ angular.module('starter.services', [])
 
     };
   })
+  .factory('ThirdChates',function () {
+    var shopes2 = [{
+      id: 0,
+      name: 'attention',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }, {
+      id: 1,
+      name: 'attention',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }, {
+      id: 2,
+      name: 'attention',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }, {
+      id: 3,
+      name: 'attention',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    },{
+      id: 4,
+      name: 'attention',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    },{
+      id: 5,
+      name: 'attention',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    },{
+      id: 6,
+      name: 'attention',
+      num:'粉丝',
+      fans: '3',
+      say: '妈妈说请先生不如于先生',
+      face: 'img/person.png',
+      att :'关注'
+    }];
+    return {
+      othalls2: function() {
+        return shopes2;
+      }
 
+    };
+  })
   .factory('Goods', function() {
   // Might use a resource here that returns a JSON array
 
@@ -429,6 +493,30 @@ angular.module('starter.services', [])
     return {
       all: function() {
         return them;
+      }
+    };
+  })
+  .factory('NoticeMess',function () {
+    var mess=[{
+      title:'给所有业主的一封信',
+      time:'2017-01-04',
+      mess:'各位尊敬的业主:时光匆匆，不知觉中我们已经踏进了崭新的2010年。在此，青岛天然居物业管理有限公司全体员工真诚地感谢您对我们一贯的信任与支持，并衷心祝愿您开心每一天！顺利每一天！！健康每一天！！'
+    },{
+      title:'给所有业主的一封信',
+      time:'2017-01-04',
+      mess:'各位尊敬的业主:时光匆匆，不知觉中我们已经踏进了崭新的2010年。在此，青岛天然居物业管理有限公司全体员工真诚地感谢您对我们一贯的信任与支持，并衷心祝愿您开心每一天！顺利每一天！！健康每一天！！'
+    },{
+      title:'给所有业主的一封信',
+      time:'2017-01-04',
+      mess:'各位尊敬的业主:时光匆匆，不知觉中我们已经踏进了崭新的2010年。在此，青岛天然居物业管理有限公司全体员工真诚地感谢您对我们一贯的信任与支持，并衷心祝愿您开心每一天！顺利每一天！！健康每一天！！'
+    },{
+      title:'给所有业主的一封信',
+      time:'2017-01-04',
+      mess:'各位尊敬的业主:时光匆匆，不知觉中我们已经踏进了崭新的2010年。在此，青岛天然居物业管理有限公司全体员工真诚地感谢您对我们一贯的信任与支持，并衷心祝愿您开心每一天！顺利每一天！！健康每一天！！'
+    }];
+    return {
+      othalls3: function() {
+        return mess;
       }
     };
   })

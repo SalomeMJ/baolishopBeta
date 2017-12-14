@@ -106,6 +106,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
         }
       }
     })
+    .state('tab.hong', {
+      url: '/dash/yezhu/hong',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/ye-hong.html',
+          controller: 'hongCtrl'
+        }
+      }
+    })
+    .state('tab.notMess', {
+      url: '/dash/yezhu/notMess',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/notice-mess.html',
+          controller: 'noticeMeCtrl'
+        }
+      }
+    })
     //友邻社交
     .state('tab.friend', {
       url: '/dash/friend',
@@ -113,6 +131,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
         'tab-dash': {
           templateUrl: 'templates/dash-friend.html',
           controller: 'friCtrl'
+        }
+      }
+    })
+    .state('tab.share', {
+      url: '/dash/friend/share',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/friend-share.html',
+          controller: 'shareCtrl'
+        }
+      }
+    })
+    .state('tab.workHome', {
+      url: '/dash/friend/workHome',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/work-home.html',
+          controller: 'workHomeCtrl'
         }
       }
     })

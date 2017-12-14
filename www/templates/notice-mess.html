@@ -1,0 +1,16 @@
+<ion-view  hide-tabs="true" view-title="公示公告">
+  <link rel="stylesheet" href="./css/notice-mess.css">
+  <ion-content class="padding contents ">
+    <!--**********************************************-->
+    <ion-list>
+      <div ng-repeat="x in notices" class="bank">
+          <div class="bank2">
+            <p class="titles">{{x.title}}</p>
+            <p>{{x.time}}</p>
+          </div>
+          <p class="message">{{x.mess}}</p>
+        </div>
+    </ion-list>
+    <!--**********************************************-->
+  </ion-content>
+</ion-view>
