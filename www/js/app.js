@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','starter.worker.controlleres','starter.controllers.home','starter.controllers.suggestion','starter.controllers.notice'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','starter.worker.controlleres','starter.controllers.home','starter.controllers.suggestion','starter.controllers.notice','waterApp','marketApp'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -49,6 +49,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
       }
     }
   })
+
 
     .state('tab.suggestion', {
       url: '/dash/suggestion',

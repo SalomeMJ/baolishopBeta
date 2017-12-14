@@ -1,0 +1,118 @@
+<ion-view view-title="送水服务" hide-tabs="true">
+  <link rel="stylesheet" href="./css/IndexMenu.css">
+
+  <ion-content>
+    <div class="content ">
+
+
+      <div class="item items">
+        <!--<i class="icon ion-person"></i>-->
+        <div class="frame-wrapper">
+          <span class="ion-person"></span>
+          <div class="frame">
+            <i>联系人:Tonge</i>
+            <i class="text-right phoneNumber">19999999</i>
+          </div>
+
+        </div>
+        <div class="frame-wrapper">
+          <span class="ion-ios-location"></span>
+          <div class="frame">
+            <i>武汉市保利时代</i>
+          </div>
+        </div>
+      </div>
+
+
+
+
+        <div class="item goodsItemWrap" >
+          <p class="waterTitle">送水服务</p>
+          <div class="item goodsItem"  ng-repeat="x in waterData">
+            <!--<div class="goods">-->
+            <!--<div>$parent.conf[$index-1]</div>-->
+            <div class="goods">
+               <span>{{x.waterName}}</span>
+              <span class="phoneNumber">{{x.waterPrice}}元*{{x.amount}}</span>
+            </div>
+
+
+          </div>
+
+          <div class="item goodsItem" >
+            <!--<div class="goods">-->
+            <!--<div>$parent.conf[$index-1]</div>-->
+            <div class="goods">
+              <span>合计金额</span>
+              <span class="phoneNumber">${{waterTotal}}元</span>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      <!--服务时间-->
+
+      <div class="item goodsItemWrap goodsItemWrap1" >
+        <div class="item goodsItem" >
+          <div class="goods">
+            <span>服务时间</span>
+            <span class="phoneNumber">18:00-21:00</span>
+          </div>
+        </div>
+        <div class="item goodsItem" >
+          <div class="goods">
+            <span>留言</span>
+            <input type="text">
+          </div>
+        </div>
+
+
+      </div>
+
+      <!--选择支付方式-->
+      <div class="item goodsItemWrap" >
+        <p class="waterTitle">服务时间</p>
+
+        <ion-list>
+          <ion-radio  ng-model="choice" ng-value="'A'" >线上支付</ion-radio>
+          <ion-radio ng-model="choice" ng-value="'B'">线下支付</ion-radio>
+        </ion-list>
+        <div class="item goodsItem goodsItemWrap2" >
+          <div class="goods">
+            <span>应付金额</span>
+            <span class="phoneNumber">${{waterTotal}}元</span>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+  </ion-content>
+
+  <div class="bar bar-footer bar-footer3">
+
+    <button class="button button-block button-positive" ng-click="skipPay()" >立即下单</button>
+
+  </div>
+
+</ion-view>
+
+

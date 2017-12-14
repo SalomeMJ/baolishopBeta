@@ -1,0 +1,124 @@
+<ion-view view-title="送水服务" hide-tabs="true">
+  <link rel="stylesheet" href="./css/IndexMenu.css">
+
+  <ion-content>
+    <div class="content ">
+
+
+      <div class="item items">
+        <!--<i class="icon ion-person"></i>-->
+        <div class="frame-wrapper">
+          <span class="ion-person"></span>
+          <div class="frame">
+            <i>联系人:Tonge</i>
+            <i class="phoneNumber">19999999</i>
+          </div>
+
+        </div>
+        <div class="frame-wrapper">
+          <span class="ion-ios-location"></span>
+          <div class="frame">
+            <i>武汉市保利时代</i>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="paymentGroupWrap">
+      <div class="btn-group paymentGroup">
+        <button type="button" class="btn " ng-class="{true:'btn-primary',false:'btn-default'}[btn1]" ng-click="toggle1()">待缴费记录</button>
+        <button type="button" class="btn btn-default" ng-class="{true:'btn-primary',false:'btn-default'}[btn2]" ng-click="toggle2()">缴费记录</button>
+
+      </div>
+    </div>
+
+
+<div class="listWrap" ng-show="listShow">
+
+  <div class="list">
+
+    <div class="item item-divider item-button-right">
+      待缴款信息
+      <button class="button button-positive button-small">
+        筛选
+      </button>
+    </div>
+
+    <div class="item payinfo">
+      没有缴款信息
+    </div>
+
+
+
+  </div>
+
+  <div class="list">
+
+    <div class="item item-divider item-button-right">
+      预缴款信息
+      <button class="button button-positive button-small">
+        筛选
+      </button>
+    </div>
+
+    <div class="item payinfo">
+      没有缴款信息
+    </div>
+    <div class="item item-button-right payinfo">
+      <input type="radio" name="group" value="ruby">
+      合计金额:52.00元
+      <button class="button button-positive button-small" ng-click="paymentSuccess()">
+        缴费
+      </button>
+    </div>
+
+
+  </div>
+</div>
+
+
+    <div class="payNode" ng-show="nodeShow">
+      <div class="list">
+
+
+
+        <div class="item payinfo">
+          2016-12-12税费$100
+        </div>
+        <div class="item  payinfo">
+
+          2016-12-12税费$100
+
+
+        </div>
+        <div class="item  payinfo">
+
+          2016-12-12税费$100
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+    <!--<div class="btn-toolbar" role="toolbar" aria-label="...">-->
+      <!--<div class="btn-group" role="group" aria-label="...">-->
+        <!--<button class="button button-positive">待缴费信息</button>-->
+
+      <!--</div>-->
+      <!--<div class="btn-group" role="group" aria-label="...">-->
+        <!--<button class="button button-positive">缴费记录</button>-->
+      <!--</div>-->
+      <!--<div class="btn-group" role="group" aria-label="...">...</div>-->
+    <!--</div>-->
+
+
+  </ion-content>
+
+
+
+</ion-view>
+
