@@ -1,5 +1,6 @@
-<link rel="stylesheet" href="./css/IndexMenu.css">
+
 <ion-view view-title="选择付款方式" hide-tabs="true">
+  <link rel="stylesheet" href="./css/IndexMenu.css">
   <ion-content >
    <div class="codeNum">订单编号:1946465454</div>
     <div class="codeNum">订单服务:送水服务</div>
@@ -63,9 +64,13 @@
             <i class="radio-icon ion-checkmark"></i>
           </div>
         </label>
-        <button class="button button-full button-positive" ng-click="paySuccess()">确认支付1</button>
+
       </div>
     </div>
   </ion-content>
+  <div class="bar bar-footer bar-footer3">
 
+    <button class="button button-block button-positive" ng-click="paySuccess()" >确认支付1</button>
+
+  </div>
 </ion-view>
